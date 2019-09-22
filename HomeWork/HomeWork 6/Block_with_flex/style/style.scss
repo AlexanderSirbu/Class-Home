@@ -1,0 +1,52 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .side {
+    box-sizing: border-box;
+    display: flex;
+    margin: 1%;
+    background: #e2d4d4;
+    height: 500px;
+    width: 50%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+
+    .item-left {
+      @include css-for-side;
+      flex-basis: $calc-for-left;
+
+      .item-number {
+        color: #e2d4d4;
+        position: $absolute;
+        right: 3%;
+        bottom: 3%;
+        font-size: 20px;
+        opacity: 0.5;
+      }
+    }
+
+    .item-right {
+      @include css-for-side;
+      flex-basis: $calc-for-right;
+
+      .item-number {
+        color: #e2d4d4;
+        position: $absolute;
+        right: 3%;
+        bottom: 3%;
+        font-size: 20px;
+        opacity: 0.5;
+      }
+    }
+  }
+}
