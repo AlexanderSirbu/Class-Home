@@ -1,6 +1,5 @@
-@charset "UTF-8";
 * {
-  font-family: ‘Poppins’, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -22,7 +21,6 @@
   padding: 15px 69px 12px;
   background: #FFFFFF;
   border-radius: 100px;
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
@@ -36,14 +34,49 @@
 }
 .container .hero-block .hero-block-information img {
   margin-right: 39px;
+  margin-bottom: 300px;
 }
 .container .hero-block .hero-block-information .hero-block-details {
   display: flex;
   flex-flow: column wrap;
 }
 .container .hero-block .hero-block-information .hero-block-details span {
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
-  font-family: Poppins;
+}
+.container .hero-block .hero-block-information .hero-block-details .hero-block-details_heading {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+}
+.container .hero-block .hero-block-information .hero-block-details button {
+  margin-top: 50px;
+  padding: 15px 69px 12px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  color: #001958;
+  align-items: center;
+}
+.container .hero-block .hero-block-information .hero-block-details .hero-block-details_heading-1 {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.container .hero-block .hero-block-information .hero-block-details .hero-block-details_heading-2 {
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.container .hero-block .hero-block-information .hero-block-details .hero-block-details_heading-3 {
+  margin-top: 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */

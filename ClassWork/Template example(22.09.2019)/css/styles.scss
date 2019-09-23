@@ -1,5 +1,5 @@
 * {
-    font-family: ‘Poppins’, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -18,7 +18,6 @@
                 padding: 15px 69px 12px;
                 background: #FFFFFF;
                 border-radius: 100px;
-                font-style: normal;
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 30px;
@@ -32,15 +31,49 @@
             margin: 122px;
             img {
                 margin-right: 39px;
+                margin-bottom: 300px;
             }
             .hero-block-details {
                 display: flex;
                 flex-flow: column wrap;
                 span {
+                    font-family: 'Poppins', sans-serif;
                     color: #ffffff;
-                    font-family: Poppins;
                 }
-                .hero-block-details_heading {}
+                .hero-block-details_heading {
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 40px;
+                }
+                button {
+                    margin-top: 50px;
+                    padding: 15px 69px 12px;
+                    background: #FFFFFF;
+                    border-radius: 100px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    color: #001958;
+                    align-items: center;
+                }
+                .hero-block-details_heading-1 {
+                    margin-top: 30px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                .hero-block-details_heading-2 {
+                    margin-top: 5px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                .hero-block-details_heading-3 {
+                    margin-top: 12px;
+                }
             }
         }
     }
