@@ -125,10 +125,13 @@
   .hero-block .hero-block-information {
     display: flex;
     flex-direction: column;
+    align-items: center !important;
     margin: 20px !important;
   }
   .hero-block .hero-block-information img {
+    align-self: center !important;
     margin-right: 39px;
+    padding-right: 180px;
   }
   .hero-block .hero-block-information .hero-block-details {
     display: flex;
