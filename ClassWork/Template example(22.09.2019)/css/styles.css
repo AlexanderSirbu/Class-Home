@@ -7,7 +7,7 @@
 }
 .container .hero-block {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: radial-gradient(86.94% 263.61% at 96.08% 15.9%, rgba(0, 25, 88, 0) 0%, #000000 100%), url(https://windeurope.org/summit2018/wp-content/uploads/gws-summit-2018-banner-plenary.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,7 +75,6 @@
 }
 .container .hero-block .hero-block-information .hero-block-details .hero-block-details_heading-limited {
   margin-top: 12px;
-  margin-bottom: 139px;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -114,6 +113,90 @@
   line-height: 75px;
   text-align: center;
   color: #828282;
+}
+
+@media only screen and (max-width: 812px) {
+  .hero-block {
+    height: 100% !important;
+  }
+  .hero-block .header button {
+    display: none;
+  }
+  .hero-block .hero-block-information {
+    display: flex;
+    flex-direction: column;
+    margin: 20px !important;
+  }
+  .hero-block .hero-block-information img {
+    margin-right: 39px;
+  }
+  .hero-block .hero-block-information .hero-block-details {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .hero-block .hero-block-information .hero-block-details span {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+  }
+  .hero-block .hero-block-information .hero-block-details .hero-block-details_heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+  }
+  .hero-block .hero-block-information .hero-block-details button {
+    align-self: flex-start;
+    margin-top: 50px;
+    padding: 15px 69px 12px 69px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    border: 1px solid #ddd7d7;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #001958;
+  }
+  .hero-block .hero-block-information .hero-block-details .hero-block-details_heading-date {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .hero-block .hero-block-information .hero-block-details .hero-block-details_heading-information {
+    margin-top: 11px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .hero-block .hero-block-information .hero-block-details .hero-block-details_heading-limited {
+    margin-top: 12px;
+    margin-bottom: 87px !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .conference-information {
+    flex-basis: 50%;
+    text-align: center;
+  }
+  .conference-information p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4F4F4F;
+  }
+  .conference-information span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: center;
+    color: #828282;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
