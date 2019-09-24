@@ -6,32 +6,31 @@
     width: 100%;
     .hero-block {
         width: 100%;
-        height: 100vh;
-        background-image: url('https://windeurope.org/summit2018/wp-content/uploads/gws-summit-2018-banner-plenary.jpg');
+        height: 100%;
+        background-image: radial-gradient(86.94% 263.61% at 96.08% 15.9%, rgba(0, 25, 88, 0) 0%, #000000 100%), url(https://windeurope.org/summit2018/wp-content/uploads/gws-summit-2018-banner-plenary.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         .header {
             display: flex;
             justify-content: flex-end;
             button {
-                margin: 38px 52px 0 0;
-                padding: 15px 69px 12px;
+                margin: 50px 52px 0 0;
+                padding: 15px 69px 12px 69px;
                 background: #FFFFFF;
                 border-radius: 100px;
+                border: 1px solid #ddd7d7;
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 30px;
-                display: flex;
                 color: #001958;
-                align-items: center;
             }
         }
         .hero-block-information {
             display: flex;
             margin: 122px;
             img {
+                align-self: flex-start;
                 margin-right: 39px;
-                margin-bottom: 300px;
             }
             .hero-block-details {
                 display: flex;
@@ -47,33 +46,71 @@
                 }
                 button {
                     margin-top: 50px;
-                    padding: 15px 69px 12px;
+                    padding: 15px 69px 12px 69px;
                     background: #FFFFFF;
                     border-radius: 100px;
+                    border: 1px solid #ddd7d7;
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 30px;
-                    display: flex;
                     color: #001958;
-                    align-items: center;
                 }
-                .hero-block-details_heading-1 {
+                .hero-block-details_heading-date {
                     margin-top: 30px;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 30px;
                 }
-                .hero-block-details_heading-2 {
-                    margin-top: 5px;
+                .hero-block-details_heading-information {
+                    margin-top: 11px;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 30px;
                 }
-                .hero-block-details_heading-3 {
+                .hero-block-details_heading-limited {
                     margin-top: 12px;
+                    margin-bottom: 139px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 30px;
                 }
+            }
+        }
+    }
+    .conference-details {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Poppins', sans-serif;
+        .conference-number-title {
+            flex-basis: 100%;
+            margin: 39px 0 20px 0;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 60px;
+            text-align: center;
+            color: #001958;
+        }
+        .conference-information {
+            flex-grow: 1;
+            text-align: center;
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: #4F4F4F;
+            }
+            span {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 50px;
+                line-height: 75px;
+                text-align: center;
+                color: #828282;
             }
         }
     }
