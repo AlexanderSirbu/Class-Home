@@ -1,0 +1,82 @@
+@import 'mixin.scss';
+@import 'variables.scss';
+* {
+    font-family: $font_family;
+}
+
+.container {
+    width: 100%;
+    .hero-block {
+        width: 100%;
+        height: 100%;
+        font-family: $font_family;
+        background: no-repeat, rgba(198, 108, 73, 0.4);
+        background-image: url(../img/background.svg);
+        background-size: cover;
+        color: #ffffff;
+        .header {
+            display: flex;
+            .header__navigation {
+                margin: 39px 0px 0px 34px;
+                flex-grow: 1;
+                align-self: flex-end;
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            .header__title {
+                flex-grow: 99;
+                margin: 36px 128px 0px 71px;
+                text-align: center;
+                span {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+        } //close .header
+        .hero-block__information {
+            display: flex;
+            flex-direction: column;
+            .hero-block__information__main-title {
+                margin-top: 50px;
+                @include font_style_align_weight_size_line(20px, 24px);
+            }
+            .hero-block__information__second-title {
+                @include font_style_align_weight_size_line(13px, 16px);
+            }
+            .hero-block__information__latest-works {
+                margin: 41px 0 50px 0;
+                @include font_style_align_weight_size_line(13px, 16px);
+                text-decoration-line: underline;
+                a {
+                    color: #ffffff;
+                }
+                a:hover {
+                    font-size: 14px;
+                    color: #fff3e6;
+                }
+            }
+        } // close hero-block__information
+    } //close hero-block
+    .about {
+        display: flex;
+        flex-direction: column;
+        color: #333333;
+        .about__title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .about__information {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: justify;
+        }
+    } //close about
+} //close container
