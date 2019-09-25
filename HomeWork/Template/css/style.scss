@@ -38,7 +38,7 @@
                     line-height: 29px;
                 }
             }
-        } //close .header
+        } //close header
         // start hero-block__information
         .hero-block__information {
             display: flex;
@@ -72,11 +72,11 @@
         font-family: $font_family;
         .about__title {
             margin-top: 25px;
-            @include font_style_weight_size_height_align(normal, 600, 24px, 29px, center);
+            @include font_style_weight_size_height( 600, 24px, 29px);
         }
         .about__information {
             margin: 19px 29px 8px 34px;
-            @include font_style_weight_size_height_align(normal, normal, 12px, 15px, justify);
+            @include font_style_weight_size_height_align(normal, 12px, 15px, justify);
         }
     } //close about
     //start skills
@@ -88,11 +88,7 @@
         font-family: $font_family;
         .profile_title {
             margin-top: 25px;
-            text-align: center;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 29px;
+            @include font_style_weight_size_height_align( 600, 24px, 29px, center);
         }
         .profile-images {
             display: flex;
@@ -109,21 +105,14 @@
             justify-content: center;
             .profile-details-block-left-side {
                 margin-left: 34px;
-                font-weight: 600;
-                font-size: 12px;
+                @include fonts_display_direction_font-weight(600);
             }
             .profile-details-block-right-side {
-                font-weight: normal;
-                font-size: 12px;
                 margin-bottom: 25px;
+                @include fonts_display_direction_font-weight(normal);
             }
             .profile-details-block-right-side,
             .profile-details-block-left-side {
-                display: flex;
-                flex-direction: column;
-                flex-grow: 1;
-                font-style: normal;
-                line-height: 25px;
                 .col-1 {
                     margin-top: 26px;
                     margin-bottom: 31px;
@@ -142,4 +131,84 @@
             }
         }
     } //close skills
+    //start portfolio
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: $font_family;
+        .portfolio__title {
+            display: flex;
+            flex-direction: column;
+            .portfolio__title-main {
+                margin: 25px 0 19px;
+                @include font_style_weight_size_height_align( 600, 24px, 29px, center);
+            }
+            .portfolio__title-second {
+                margin-bottom: 15px;
+                @include font_style_weight_size_height_align( 500, 14px, 25px, center);
+            }
+        }
+        .portfolio__info {
+            p {
+                padding-bottom: 25px;
+                @include font_style_align_weight_size_line(12px, 15px);
+            }
+        }
+        .portfolio__images {
+            display: flex;
+            margin-bottom: 25px;
+            .side-left {
+                margin-left: 34px;
+                margin-right: 14px;
+                .h1 {
+                    margin-bottom: 12px;
+                }
+            }
+            .side-right {
+                margin-right: 33px;
+                .h1 {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    //end portfolio
+    //start Get_in_touch
+    .Get__in__touch {
+        display: flex;
+        flex-direction: column;
+        font-family: $font_family;
+        justify-content: center;
+        background: #FFFAF2;
+        .Get__in__touch-title {
+            margin: 3px 0 22px;
+            @include font_style_weight_size_height(600, 24px, 29px);
+        }
+        .Get__in__touch-details {
+            display: flex;
+            margin-bottom: 30px;
+            .left {
+                margin-left: 42px;
+            }
+            .side {
+                flex-basis: 50%;
+            }
+            span {
+                display: block;
+                margin-top: 19px;
+            }
+        }
+        .Get__in__touch-footer {
+            display: flex;
+            justify-content: space-between;
+            p {
+                margin: 0 0 50px 42px;
+            }
+            span {
+                margin: 0 32px 58px 0;
+            }
+        }
+    }
+    //end Get_in_touch
 } //close container

@@ -6,10 +6,28 @@
     line-height: $line_height;
 }
 
-@mixin font_style_weight_size_height_align($font-style, $font-weight, $font-size, $line_height, $text-align) {
-    font-style: $font-style;
+@mixin font_style_weight_size_height_align( $font-weight, $font-size, $line_height, $text-align) {
+    font-style: normal;
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line_height;
     text-align: $text-align;
+}
+
+@mixin font_style_weight_size_height( $font-weight, $font-size, $line_height) {
+    font-style: normal;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line_height;
+    text-align: center;
+}
+
+@mixin fonts_display_direction_font-weight( $font-weight) {
+    line-height: 25px;
+    font-style: normal;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: $font-weight;
 }
