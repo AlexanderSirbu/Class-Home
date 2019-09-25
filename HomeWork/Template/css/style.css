@@ -5,252 +5,254 @@
 .container {
   width: 100%;
 }
-.container .hero-block {
-  width: 100%;
-  height: 100%;
-  font-family: "Libre Franklin", sans-serif;
-  background: no-repeat, rgba(198, 108, 73, 0.4);
-  background-image: url(../img/background-for-mobile.svg);
-  background-size: cover;
-  color: #ffffff;
-}
-.container .hero-block .header {
-  display: flex;
-}
-.container .hero-block .header .header__navigation {
-  margin: 39px 0px 0px 34px;
-  flex-grow: 1;
-  align-self: flex-end;
-}
-.container .hero-block .header .header__navigation img {
-  width: 24px;
-  height: 24px;
-}
-.container .hero-block .header .header__title {
-  flex-grow: 99;
-  margin: 36px 128px 0px 71px;
-  text-align: center;
-}
-.container .hero-block .header .header__title span {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-}
-.container .hero-block .hero-block__information {
-  display: flex;
-  flex-direction: column;
-}
-.container .hero-block .hero-block__information .hero-block__information__main-title {
-  margin-top: 50px;
-  font-style: normal;
-  font-weight: normal;
-  text-align: center;
-  font-size: 20px;
-  line-height: 24px;
-}
-.container .hero-block .hero-block__information .hero-block__information__second-title {
-  font-style: normal;
-  font-weight: normal;
-  text-align: center;
-  font-size: 13px;
-  line-height: 16px;
-}
-.container .hero-block .hero-block__information .hero-block__information__latest-works {
-  margin: 41px 0 50px 0;
-  font-style: normal;
-  font-weight: normal;
-  text-align: center;
-  font-size: 13px;
-  line-height: 16px;
-  text-decoration-line: underline;
-}
-.container .hero-block .hero-block__information .hero-block__information__latest-works a {
-  color: #ffffff;
-}
-.container .hero-block .hero-block__information .hero-block__information__latest-works a:hover {
-  font-size: 14px;
-  color: #fff3e6;
-}
-.container .about {
-  display: flex;
-  flex-direction: column;
-  color: #333333;
-  font-family: "Libre Franklin", sans-serif;
-}
-.container .about .about__title {
-  margin-top: 25px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-}
-.container .about .about__information {
-  margin: 19px 29px 8px 34px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: justify;
-}
-.container .skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #FFFAF2;
-  font-family: "Libre Franklin", sans-serif;
-}
-.container .skills .profile_title {
-  margin-top: 25px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-}
-.container .skills .profile-images {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 26px;
-}
-.container .skills .profile-images img {
-  width: 214px;
-  height: 224px;
-}
-.container .skills .profile-details {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.container .skills .profile-details .profile-details-block-left-side {
-  margin-left: 34px;
-  line-height: 25px;
-  font-style: normal;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-  font-weight: 600;
-}
-.container .skills .profile-details .profile-details-block-right-side {
-  margin-bottom: 25px;
-  line-height: 25px;
-  font-style: normal;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-  font-weight: normal;
-}
-.container .skills .profile-details .profile-details-block-right-side .col-1,
+@media screen and (min-width: 351px) {
+  .container .hero-block {
+    width: 100%;
+    height: 100%;
+    font-family: "Libre Franklin", sans-serif;
+    background: no-repeat, rgba(198, 108, 73, 0.4);
+    background-image: url(../img/background-for-mobile.svg);
+    background-size: cover;
+    color: #ffffff;
+  }
+  .container .hero-block .header {
+    display: flex;
+  }
+  .container .hero-block .header .header__navigation {
+    margin: 39px 0px 0px 34px;
+    flex-grow: 1;
+    align-self: flex-end;
+  }
+  .container .hero-block .header .header__navigation img {
+    width: 24px;
+    height: 24px;
+  }
+  .container .hero-block .header .header__title {
+    flex-grow: 99;
+    margin: 36px 128px 0px 71px;
+    text-align: center;
+  }
+  .container .hero-block .header .header__title span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .container .hero-block .hero-block__information {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__main-title {
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__second-title {
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__latest-works {
+    margin: 41px 0 50px 0;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: underline;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__latest-works a {
+    color: #ffffff;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__latest-works a:hover {
+    font-size: 14px;
+    color: #fff3e6;
+  }
+  .container .about {
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  .container .about .about__title {
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .container .about .about__information {
+    margin: 19px 29px 8px 34px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+  }
+  .container .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFFAF2;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  .container .skills .profile_title {
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .container .skills .profile-images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+  }
+  .container .skills .profile-images img {
+    width: 214px;
+    height: 224px;
+  }
+  .container .skills .profile-details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .container .skills .profile-details .profile-details-block-left-side {
+    margin-left: 34px;
+    line-height: 25px;
+    font-style: normal;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .container .skills .profile-details .profile-details-block-right-side {
+    margin-bottom: 25px;
+    line-height: 25px;
+    font-style: normal;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-1,
 .container .skills .profile-details .profile-details-block-left-side .col-1 {
-  margin-top: 26px;
-  margin-bottom: 31px;
-}
-.container .skills .profile-details .profile-details-block-right-side .col-3,
+    margin-top: 26px;
+    margin-bottom: 31px;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-3,
 .container .skills .profile-details .profile-details-block-left-side .col-3 {
-  margin-top: 9px;
-  margin-bottom: 18px;
-}
-.container .skills .profile-details .profile-details-block-right-side .col-5,
+    margin-top: 9px;
+    margin-bottom: 18px;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-5,
 .container .skills .profile-details .profile-details-block-left-side .col-5 {
-  margin-top: 10px;
-  margin-bottom: 18px;
-}
-.container .skills .profile-details .profile-details-block-right-side .col-7,
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-7,
 .container .skills .profile-details .profile-details-block-left-side .col-7 {
-  margin-top: 8px;
-}
-.container .portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: "Libre Franklin", sans-serif;
-}
-.container .portfolio .portfolio__title {
-  display: flex;
-  flex-direction: column;
-}
-.container .portfolio .portfolio__title .portfolio__title-main {
-  margin: 25px 0 19px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-}
-.container .portfolio .portfolio__title .portfolio__title-second {
-  margin-bottom: 15px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 25px;
-  text-align: center;
-}
-.container .portfolio .portfolio__info p {
-  padding-bottom: 25px;
-  font-style: normal;
-  font-weight: normal;
-  text-align: center;
-  font-size: 12px;
-  line-height: 15px;
-}
-.container .portfolio .portfolio__images {
-  display: flex;
-  margin-bottom: 25px;
-}
-.container .portfolio .portfolio__images .side-left {
-  margin-left: 34px;
-  margin-right: 14px;
-}
-.container .portfolio .portfolio__images .side-left .h1 {
-  margin-bottom: 12px;
-}
-.container .portfolio .portfolio__images .side-right {
-  margin-right: 33px;
-}
-.container .portfolio .portfolio__images .side-right .h1 {
-  margin-bottom: 10px;
-}
-.container .Get__in__touch {
-  display: flex;
-  flex-direction: column;
-  font-family: "Libre Franklin", sans-serif;
-  justify-content: center;
-  background: #FFFAF2;
-}
-.container .Get__in__touch .Get__in__touch-title {
-  margin: 3px 0 22px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-}
-.container .Get__in__touch .Get__in__touch-details {
-  display: flex;
-  margin-bottom: 30px;
-}
-.container .Get__in__touch .Get__in__touch-details .left {
-  margin-left: 42px;
-}
-.container .Get__in__touch .Get__in__touch-details .side {
-  flex-basis: 50%;
-}
-.container .Get__in__touch .Get__in__touch-details span {
-  display: block;
-  margin-top: 19px;
-}
-.container .Get__in__touch .Get__in__touch-footer {
-  display: flex;
-  justify-content: space-between;
-}
-.container .Get__in__touch .Get__in__touch-footer p {
-  margin: 0 0 50px 42px;
-}
-.container .Get__in__touch .Get__in__touch-footer span {
-  margin: 0 32px 58px 0;
+    margin-top: 8px;
+  }
+  .container .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  .container .portfolio .portfolio__title {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .portfolio .portfolio__title .portfolio__title-main {
+    margin: 25px 0 19px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .container .portfolio .portfolio__title .portfolio__title-second {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .container .portfolio .portfolio__info p {
+    padding-bottom: 25px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .container .portfolio .portfolio__images {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .container .portfolio .portfolio__images .side-left {
+    margin-left: 34px;
+    margin-right: 14px;
+  }
+  .container .portfolio .portfolio__images .side-left .portfolio-images {
+    margin-bottom: 12px;
+  }
+  .container .portfolio .portfolio__images .side-right {
+    margin-right: 33px;
+  }
+  .container .portfolio .portfolio__images .side-right .portfolio-images {
+    margin-bottom: 10px;
+  }
+  .container .Get__in__touch {
+    display: flex;
+    flex-direction: column;
+    font-family: "Libre Franklin", sans-serif;
+    justify-content: center;
+    background: #FFFAF2;
+  }
+  .container .Get__in__touch .Get__in__touch-title {
+    margin: 3px 0 22px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .container .Get__in__touch .Get__in__touch-details {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .container .Get__in__touch .Get__in__touch-details .left {
+    margin-left: 42px;
+  }
+  .container .Get__in__touch .Get__in__touch-details .side {
+    flex-basis: 50%;
+  }
+  .container .Get__in__touch .Get__in__touch-details span {
+    display: block;
+    margin-top: 19px;
+  }
+  .container .Get__in__touch .Get__in__touch-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .Get__in__touch .Get__in__touch-footer p {
+    margin: 0 0 50px 42px;
+  }
+  .container .Get__in__touch .Get__in__touch-footer span {
+    margin: 0 32px 58px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
