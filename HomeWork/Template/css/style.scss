@@ -79,4 +79,67 @@
             @include font_style_weight_size_height_align(normal, normal, 12px, 15px, justify);
         }
     } //close about
+    //start skills
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #FFFAF2;
+        font-family: $font_family;
+        .profile_title {
+            margin-top: 25px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .profile-images {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 26px;
+            img {
+                width: 214px;
+                height: 224px;
+            }
+        }
+        .profile-details {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            .profile-details-block-left-side {
+                margin-left: 34px;
+                font-weight: 600;
+                font-size: 12px;
+            }
+            .profile-details-block-right-side {
+                font-weight: normal;
+                font-size: 12px;
+                margin-bottom: 25px;
+            }
+            .profile-details-block-right-side,
+            .profile-details-block-left-side {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                font-style: normal;
+                line-height: 25px;
+                .col-1 {
+                    margin-top: 26px;
+                    margin-bottom: 31px;
+                }
+                .col-3 {
+                    margin-top: 9px;
+                    margin-bottom: 18px;
+                }
+                .col-5 {
+                    margin-top: 10px;
+                    margin-bottom: 18px;
+                }
+                .col-7 {
+                    margin-top: 8px;
+                }
+            }
+        }
+    } //close skills
 } //close container
