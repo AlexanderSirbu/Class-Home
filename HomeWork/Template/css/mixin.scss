@@ -1,0 +1,7 @@
+@mixin font_style_align_weight_size_line($font-size, $line_height) {
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: $font-size;
+    line-height: $line_height;
+}
