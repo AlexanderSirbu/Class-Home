@@ -5,44 +5,24 @@
 .container {
   width: 100%;
 }
+.container .hero-block {
+  width: 100%;
+  height: 100%;
+  font-family: "Libre Franklin", sans-serif;
+  background: no-repeat, rgba(198, 108, 73, 0.4);
+  background-image: url(../img/background-for-mobile.svg);
+  background-size: cover;
+  color: #ffffff;
+}
 @media screen and (min-width: 351px) {
-  .container .hero-block {
-    width: 100%;
-    height: 100%;
-    font-family: "Libre Franklin", sans-serif;
-    background: no-repeat, rgba(198, 108, 73, 0.4);
-    background-image: url(../img/background-for-mobile.svg);
-    background-size: cover;
-    color: #ffffff;
-  }
-  .container .hero-block .header {
+  .container .header {
     display: flex;
   }
-  .container .hero-block .header .header__navigation {
-    margin: 39px 0px 0px 34px;
-    flex-grow: 1;
-    align-self: flex-end;
-  }
-  .container .hero-block .header .header__navigation img {
-    width: 24px;
-    height: 24px;
-  }
-  .container .hero-block .header .header__title {
-    flex-grow: 99;
-    margin: 36px 128px 0px 71px;
-    text-align: center;
-  }
-  .container .hero-block .header .header__title span {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-  }
-  .container .hero-block .hero-block__information {
+  .container .hero-block__information {
     display: flex;
     flex-direction: column;
   }
-  .container .hero-block .hero-block__information .hero-block__information__main-title {
+  .container .hero-block__information .hero-block__information__main-title {
     margin-top: 50px;
     font-style: normal;
     font-weight: normal;
@@ -50,14 +30,14 @@
     font-size: 20px;
     line-height: 24px;
   }
-  .container .hero-block .hero-block__information .hero-block__information__second-title {
+  .container .hero-block__information .hero-block__information__second-title {
     font-style: normal;
     font-weight: normal;
     text-align: center;
     font-size: 13px;
     line-height: 16px;
   }
-  .container .hero-block .hero-block__information .hero-block__information__latest-works {
+  .container .hero-block__information .hero-block__information__latest-works {
     margin: 41px 0 50px 0;
     font-style: normal;
     font-weight: normal;
@@ -66,10 +46,10 @@
     line-height: 16px;
     text-decoration-line: underline;
   }
-  .container .hero-block .hero-block__information .hero-block__information__latest-works a {
+  .container .hero-block__information .hero-block__information__latest-works a {
     color: #ffffff;
   }
-  .container .hero-block .hero-block__information .hero-block__information__latest-works a:hover {
+  .container .hero-block__information .hero-block__information__latest-works a:hover {
     font-size: 14px;
     color: #fff3e6;
   }
