@@ -1,216 +1,231 @@
-@import 'mixin.scss';
-@import 'variables.scss';
-* {
-    font-family: $font_family;
-}
-
-.container {
-    width: 100%;
-    @media screen and (min-width: 351px) {
-        //start hero-block
-        .hero-block {
+        @import 'mixin.scss';
+        @import 'variables.scss';
+        * {
+            font-family: $font_family;
+        }
+        
+        .container {
             width: 100%;
-            height: 100%;
-            font-family: $font_family;
-            background: no-repeat, rgba(198, 108, 73, 0.4);
-            background-image: url(../img/background-for-mobile.svg);
-            background-size: cover;
-            color: #ffffff;
-            //start header
-            .header {
-                display: flex;
-                .header__navigation {
-                    margin: 39px 0px 0px 34px;
-                    flex-grow: 1;
-                    align-self: flex-end;
-                    img {
-                        width: 24px;
-                        height: 24px;
+            //start hero-block
+            .hero-block {
+                width: 100%;
+                height: 100%;
+                font-family: $font_family;
+                background: no-repeat, rgba(198, 108, 73, 0.4);
+                background-image: url(../img/background-for-mobile.svg);
+                background-size: cover;
+                color: #ffffff;
+            } //close hero-block
+            @media screen and (min-width: 800px) {
+                //start header
+                .header {
+                    .header__navigation {
+                        .header__navigation-title {}
+                    }
+                } //close header
+                // // start hero-block__information
+                // .hero-block__information {
+                //     .hero-block__information__main-title {}
+                //     .hero-block__information__second-title {
+                //         .hero-block__information__latest-works {}
+                //     } // close hero-block__information
+                // }
+            }
+            @media screen and (min-width: 351px) {
+                //start header
+                .header {
+                    display: flex;
+                    .header__navigation {
+                        //     margin: 39px 0px 0px 34px;
+                        //     flex-grow: 1;
+                        //     align-self: flex-end;
+                        //     img {
+                        //         width: 24px;
+                        //         height: 24px;
+                        //     }
+                    }
+                    .header__title {
+                        // flex-grow: 99;
+                        // margin: 36px 128px 0px 71px;
+                        // text-align: center;
+                        // span {
+                        //     font-style: normal;
+                        //     font-weight: bold;
+                        //     font-size: 24px;
+                        //     line-height: 29px;
+                        // }
+                    }
+                } //close header
+                // start hero-block__information
+                .hero-block__information {
+                    display: flex;
+                    flex-direction: column;
+                    .hero-block__information__main-title {
+                        margin-top: 50px;
+                        @include font_style_align_weight_size_line(20px, 24px);
+                    }
+                    .hero-block__information__second-title {
+                        @include font_style_align_weight_size_line(13px, 16px);
+                    }
+                    .hero-block__information__latest-works {
+                        margin: 41px 0 50px 0;
+                        @include font_style_align_weight_size_line(13px, 16px);
+                        text-decoration-line: underline;
+                        a {
+                            color: #ffffff;
+                        }
+                        a:hover {
+                            font-size: 14px;
+                            color: #fff3e6;
+                        }
+                    }
+                } // close hero-block__information
+                //start about
+                .about {
+                    display: flex;
+                    flex-direction: column;
+                    color: #333333;
+                    font-family: $font_family;
+                    .about__title {
+                        margin-top: 25px;
+                        @include font_style_weight_size_height( 600, 24px, 29px);
+                    }
+                    .about__information {
+                        margin: 19px 29px 8px 34px;
+                        @include font_style_weight_size_height_align(normal, 12px, 15px, justify);
+                    }
+                } //close about
+                //start skills
+                .skills {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background: #FFFAF2;
+                    font-family: $font_family;
+                    .profile_title {
+                        margin-top: 25px;
+                        @include font_style_weight_size_height_align( 600, 24px, 29px, center);
+                    }
+                    .profile-images {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 26px;
+                        img {
+                            width: 214px;
+                            height: 224px;
+                        }
+                    }
+                    .profile-details {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        .profile-details-block-left-side {
+                            margin-left: 34px;
+                            @include fonts_display_direction_font-weight(600);
+                        }
+                        .profile-details-block-right-side {
+                            margin-bottom: 25px;
+                            @include fonts_display_direction_font-weight(normal);
+                        }
+                        .profile-details-block-right-side,
+                        .profile-details-block-left-side {
+                            .col-1 {
+                                margin-top: 26px;
+                                margin-bottom: 31px;
+                            }
+                            .col-3 {
+                                margin-top: 9px;
+                                margin-bottom: 18px;
+                            }
+                            .col-5 {
+                                margin-top: 10px;
+                                margin-bottom: 18px;
+                            }
+                            .col-7 {
+                                margin-top: 8px;
+                            }
+                        }
+                    }
+                } //close skills
+                //start portfolio
+                .portfolio {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-family: $font_family;
+                    .portfolio__title {
+                        display: flex;
+                        flex-direction: column;
+                        .portfolio__title-main {
+                            margin: 25px 0 19px;
+                            @include font_style_weight_size_height_align( 600, 24px, 29px, center);
+                        }
+                        .portfolio__title-second {
+                            margin-bottom: 15px;
+                            @include font_style_weight_size_height_align( 500, 14px, 25px, center);
+                        }
+                    }
+                    .portfolio__info {
+                        p {
+                            padding-bottom: 25px;
+                            @include font_style_align_weight_size_line(12px, 15px);
+                        }
+                    }
+                    .portfolio__images {
+                        display: flex;
+                        margin-bottom: 25px;
+                        .side-left {
+                            margin-left: 34px;
+                            margin-right: 14px;
+                            .portfolio-images {
+                                margin-bottom: 12px;
+                            }
+                        }
+                        .side-right {
+                            margin-right: 33px;
+                            .portfolio-images {
+                                margin-bottom: 10px;
+                            }
+                        }
                     }
                 }
-                .header__title {
-                    flex-grow: 99;
-                    margin: 36px 128px 0px 71px;
-                    text-align: center;
-                    span {
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 24px;
-                        line-height: 29px;
+                //end portfolio
+                //start Get_in_touch
+                .Get__in__touch {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: $font_family;
+                    justify-content: center;
+                    background: #FFFAF2;
+                    .Get__in__touch-title {
+                        margin: 3px 0 22px;
+                        @include font_style_weight_size_height(600, 24px, 29px);
+                    }
+                    .Get__in__touch-details {
+                        display: flex;
+                        margin-bottom: 30px;
+                        .left {
+                            margin-left: 42px;
+                        }
+                        .side {
+                            flex-basis: 50%;
+                        }
+                        span {
+                            display: block;
+                            margin-top: 19px;
+                        }
+                    }
+                    .Get__in__touch-footer {
+                        display: flex;
+                        justify-content: space-between;
+                        p {
+                            margin: 0 0 50px 42px;
+                        }
+                        span {
+                            margin: 0 32px 58px 0;
+                        }
                     }
                 }
-            } //close header
-            // start hero-block__information
-            .hero-block__information {
-                display: flex;
-                flex-direction: column;
-                .hero-block__information__main-title {
-                    margin-top: 50px;
-                    @include font_style_align_weight_size_line(20px, 24px);
-                }
-                .hero-block__information__second-title {
-                    @include font_style_align_weight_size_line(13px, 16px);
-                }
-                .hero-block__information__latest-works {
-                    margin: 41px 0 50px 0;
-                    @include font_style_align_weight_size_line(13px, 16px);
-                    text-decoration-line: underline;
-                    a {
-                        color: #ffffff;
-                    }
-                    a:hover {
-                        font-size: 14px;
-                        color: #fff3e6;
-                    }
-                }
-            } // close hero-block__information
-        } //close hero-block
-        //start about
-        .about {
-            display: flex;
-            flex-direction: column;
-            color: #333333;
-            font-family: $font_family;
-            .about__title {
-                margin-top: 25px;
-                @include font_style_weight_size_height( 600, 24px, 29px);
+                //end Get_in_touch
             }
-            .about__information {
-                margin: 19px 29px 8px 34px;
-                @include font_style_weight_size_height_align(normal, 12px, 15px, justify);
-            }
-        } //close about
-        //start skills
-        .skills {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: #FFFAF2;
-            font-family: $font_family;
-            .profile_title {
-                margin-top: 25px;
-                @include font_style_weight_size_height_align( 600, 24px, 29px, center);
-            }
-            .profile-images {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 26px;
-                img {
-                    width: 214px;
-                    height: 224px;
-                }
-            }
-            .profile-details {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: center;
-                .profile-details-block-left-side {
-                    margin-left: 34px;
-                    @include fonts_display_direction_font-weight(600);
-                }
-                .profile-details-block-right-side {
-                    margin-bottom: 25px;
-                    @include fonts_display_direction_font-weight(normal);
-                }
-                .profile-details-block-right-side,
-                .profile-details-block-left-side {
-                    .col-1 {
-                        margin-top: 26px;
-                        margin-bottom: 31px;
-                    }
-                    .col-3 {
-                        margin-top: 9px;
-                        margin-bottom: 18px;
-                    }
-                    .col-5 {
-                        margin-top: 10px;
-                        margin-bottom: 18px;
-                    }
-                    .col-7 {
-                        margin-top: 8px;
-                    }
-                }
-            }
-        } //close skills
-        //start portfolio
-        .portfolio {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-family: $font_family;
-            .portfolio__title {
-                display: flex;
-                flex-direction: column;
-                .portfolio__title-main {
-                    margin: 25px 0 19px;
-                    @include font_style_weight_size_height_align( 600, 24px, 29px, center);
-                }
-                .portfolio__title-second {
-                    margin-bottom: 15px;
-                    @include font_style_weight_size_height_align( 500, 14px, 25px, center);
-                }
-            }
-            .portfolio__info {
-                p {
-                    padding-bottom: 25px;
-                    @include font_style_align_weight_size_line(12px, 15px);
-                }
-            }
-            .portfolio__images {
-                display: flex;
-                margin-bottom: 25px;
-                .side-left {
-                    margin-left: 34px;
-                    margin-right: 14px;
-                    .portfolio-images {
-                        margin-bottom: 12px;
-                    }
-                }
-                .side-right {
-                    margin-right: 33px;
-                    .portfolio-images {
-                        margin-bottom: 10px;
-                    }
-                }
-            }
-        }
-        //end portfolio
-        //start Get_in_touch
-        .Get__in__touch {
-            display: flex;
-            flex-direction: column;
-            font-family: $font_family;
-            justify-content: center;
-            background: #FFFAF2;
-            .Get__in__touch-title {
-                margin: 3px 0 22px;
-                @include font_style_weight_size_height(600, 24px, 29px);
-            }
-            .Get__in__touch-details {
-                display: flex;
-                margin-bottom: 30px;
-                .left {
-                    margin-left: 42px;
-                }
-                .side {
-                    flex-basis: 50%;
-                }
-                span {
-                    display: block;
-                    margin-top: 19px;
-                }
-            }
-            .Get__in__touch-footer {
-                display: flex;
-                justify-content: space-between;
-                p {
-                    margin: 0 0 50px 42px;
-                }
-                span {
-                    margin: 0 32px 58px 0;
-                }
-            }
-        }
-        //end Get_in_touch
-    }
-} //close containers
+        } //close container
