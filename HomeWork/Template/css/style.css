@@ -5,7 +5,6 @@
 .row {
   margin-top: 93px;
   margin-left: 165px;
-  margin-right: 165px;
 }
 
 .container {
@@ -25,6 +24,8 @@
     display: flex;
   }
   .container .hero-block .header .header__navigation .header__navigation-title {
+    margin-top: 93px;
+    margin-left: 165px;
     margin-right: 464px;
   }
   .container .hero-block .header .header__navigation .header__navigation-title span {
@@ -40,6 +41,7 @@
   .container .hero-block .header .header__navigation .menu {
     display: flex;
     flex-basis: 1;
+    margin-top: 93px;
   }
   .container .hero-block .header .header__navigation .menu li {
     margin-right: 60px;
@@ -55,6 +57,8 @@
   .container .hero-block .hero-block__information {
     display: flex;
     flex-direction: column;
+    margin-top: 93px;
+    margin-left: 165px;
   }
   .container .hero-block .hero-block__information .hero-block__information__main-title {
     margin: 145px 0 26px;
@@ -89,6 +93,8 @@
     font-family: "Libre Franklin", sans-serif;
   }
   .container .about .about__title {
+    margin-top: 93px;
+    margin-left: 165px;
     margin-bottom: 76px;
     font-style: normal;
     font-weight: bold;
@@ -96,6 +102,7 @@
     line-height: 29px;
   }
   .container .about .about__information {
+    margin-left: 165px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -110,6 +117,8 @@
     font-family: "Libre Franklin", sans-serif;
   }
   .container .skills .profile_title {
+    margin-top: 93px;
+    margin-left: 165px;
     margin-bottom: 86px;
     font-style: normal;
     font-weight: bold;
@@ -120,6 +129,7 @@
   .container .skills .profile-images {
     margin-right: 125px;
     margin-bottom: 145px;
+    margin-left: 165px;
   }
   .container .skills .profile-images img {
     width: 350px;
@@ -164,80 +174,81 @@
     margin-bottom: 20px;
   }
   .container .portfolio {
-    display: flex;
     font-family: "Libre Franklin", sans-serif;
   }
-  .container .portfolio .row {
-    margin: 93px 0px 145px 165px;
-  }
-  .container .portfolio .row .portfolio__title {
+  .container .portfolio .portfolio__title {
     display: flex;
     flex-direction: column;
+    margin-left: 165px;
   }
-  .container .portfolio .row .portfolio__title .portfolio__title-main {
+  .container .portfolio .portfolio__title .portfolio__title-main {
+    margin-top: 93px;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
-    margin-bottom: 48px;
+    margin-bottom: 86px;
   }
-  .container .portfolio .row .portfolio__title .portfolio__title-second {
+  .container .portfolio .portfolio__title .portfolio__title-second {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 48px;
   }
-  .container .portfolio .row .portfolio__images {
+  .container .portfolio .portfolio__images {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 145px;
   }
-  .container .portfolio .row .portfolio__images .portfolio__info {
-    flex-basis: 350px;
-    margin-right: 126px;
+  .container .portfolio .portfolio__images .portfolio__info {
+    flex-basis: 349px;
+    margin-right: 125px;
+    margin-left: 165px;
   }
-  .container .portfolio .row .portfolio__images .portfolio__info p {
+  .container .portfolio .portfolio__images .portfolio__info p {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
     text-align: justify;
   }
-  .container .portfolio .row .portfolio__images .portfolio__info .portfolio__arrows {
+  .container .portfolio .portfolio__images .portfolio__info .portfolio__arrows {
     display: flex;
   }
-  .container .portfolio .row .portfolio__images .portfolio__info .portfolio__arrows span {
+  .container .portfolio .portfolio__images .portfolio__info .portfolio__arrows span {
     margin-top: 235px;
   }
-  .container .portfolio .row .portfolio__images .portfolio__info .portfolio__arrows span .arrow {
+  .container .portfolio .portfolio__images .portfolio__info .portfolio__arrows span .arrow {
     margin-right: 14px;
   }
-  .container .portfolio .row .portfolio__images .side-left {
+  .container .portfolio .portfolio__images .side-left {
     display: flex;
     flex-direction: column;
   }
-  .container .portfolio .row .portfolio__images .side-left .img-1 {
+  .container .portfolio .portfolio__images .side-left .img-1 {
     margin-bottom: 26px;
     margin-right: 30px;
   }
-  .container .portfolio .row .portfolio__images .side-left img {
+  .container .portfolio .portfolio__images .side-left img {
     width: 350px;
   }
-  .container .portfolio .row .portfolio__images .side-right {
+  .container .portfolio .portfolio__images .side-right {
     display: flex;
     flex-direction: column;
+    margin-right: 165px;
   }
-  .container .portfolio .row .portfolio__images .side-right .img-1 {
+  .container .portfolio .portfolio__images .side-right .img-1 {
     margin-bottom: 24px;
   }
-  .container .portfolio .row .portfolio__images .side-right img {
+  .container .portfolio .portfolio__images .side-right img {
     width: 255px;
   }
   .container .Get__in__touch {
     font-family: "Libre Franklin", sans-serif;
+    background: #FFFAF2;
     display: flex;
     flex-wrap: wrap;
-    background: #FFFAF2;
   }
   .container .Get__in__touch .Get__in__touch-title {
     margin-top: 93px;
@@ -250,16 +261,10 @@
     flex-basis: 100%;
   }
   .container .Get__in__touch .Get__in__touch-details {
+    margin-left: 165px;
     display: flex;
     flex-direction: row;
-    margin-left: 165px;
     margin-bottom: 189px;
-    margin-right: 300px;
-  }
-  .container .Get__in__touch .Get__in__touch-details .left {
-    display: flex;
-    flex-direction: column;
-    margin-right: 300px;
   }
   .container .Get__in__touch .Get__in__touch-details .left span {
     margin-bottom: 14px;
@@ -267,6 +272,7 @@
   .container .Get__in__touch .Get__in__touch-details .side {
     display: flex;
     flex-direction: column;
+    margin-right: 300px;
   }
   .container .Get__in__touch .Get__in__touch-details .side span {
     margin-bottom: 14px;
@@ -283,9 +289,8 @@
     margin-bottom: 14px;
   }
   .container .Get__in__touch .Get__in__touch-arrow {
-    margin-left: 143px;
     margin-top: 239px;
-    margin-right: 180px;
+    margin-left: 163px;
   }
 }
 
