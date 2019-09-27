@@ -10,7 +10,7 @@
 .container {
   width: 100%;
 }
-@media screen and (min-width: 351px) {
+@media screen and (min-width: 820px) {
   .container .hero-block {
     width: 100%;
     height: 100%;
@@ -20,16 +20,297 @@
     background-size: cover;
     color: #ffffff;
   }
-  .container .hero-block .header-mobile .header__navigation {
-    margin-left: 34px;
-  }
-  .container .hero-block .header-mobile .header__navigation .header__navigation-title {
+  .container .hero-block .header .header__navigation {
     display: flex;
   }
-  .container .hero-block .header-mobile .header__navigation .header__navigation-title span {
+  .container .hero-block .header .header__navigation .header__navigation-title {
+    margin-top: 93px;
+    margin-left: 165px;
+    margin-right: 464px;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title span a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title .header__navigation-images {
+    display: none;
+  }
+  .container .hero-block .header .header__navigation .menu {
+    display: flex;
+    flex-basis: 1;
+    margin-top: 93px;
+  }
+  .container .hero-block .header .header__navigation .menu li {
+    margin-right: 60px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .container .hero-block .header .header__navigation .menu li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .container .hero-block .hero-block__information {
+    display: flex;
+    flex-direction: column;
+    margin-top: 93px;
+    margin-left: 165px;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__main-title {
+    margin: 145px 0 26px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 78px;
+    display: flex;
+    align-items: center;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__second-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__latest-works {
+    margin: 106px 0 240px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__latest-works a {
+    color: #fff;
+  }
+  .container .about {
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  .container .about .about__title {
+    margin-top: 93px;
+    margin-left: 165px;
+    margin-bottom: 76px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .container .about .about__information {
+    margin-left: 165px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 115px;
+    margin-right: 167px;
+  }
+  .container .skills {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFFAF2;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  .container .skills .profile_title {
+    margin-top: 93px;
+    margin-left: 165px;
+    margin-bottom: 86px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    flex-basis: 100%;
+  }
+  .container .skills .profile-images {
+    margin-right: 125px;
+    margin-bottom: 145px;
+    margin-left: 165px;
+  }
+  .container .skills .profile-images img {
+    width: 350px;
+    height: 350px;
+  }
+  .container .skills .profile-details {
+    display: flex;
+  }
+  .container .skills .profile-details .profile-details-block-left-side {
+    flex-basis: 1;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 78px;
+  }
+  .container .skills .profile-details .profile-details-block-right-side {
+    flex-basis: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-1,
+.container .skills .profile-details .profile-details-block-left-side .col-1 {
+    margin-bottom: 65px;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-2,
+.container .skills .profile-details .profile-details-block-right-side .col-3,
+.container .skills .profile-details .profile-details-block-right-side .col-4,
+.container .skills .profile-details .profile-details-block-right-side .col-5,
+.container .skills .profile-details .profile-details-block-right-side .col-6,
+.container .skills .profile-details .profile-details-block-left-side .col-2,
+.container .skills .profile-details .profile-details-block-left-side .col-3,
+.container .skills .profile-details .profile-details-block-left-side .col-4,
+.container .skills .profile-details .profile-details-block-left-side .col-5,
+.container .skills .profile-details .profile-details-block-left-side .col-6 {
+    margin-bottom: 20px;
+  }
+  .container .portfolio {
+    font-family: "Libre Franklin", sans-serif;
+    display: flex;
+  }
+  .container .portfolio .portfolio__title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 165px;
+  }
+  .container .portfolio .portfolio__title .portfolio__title-main {
+    margin-top: 93px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 86px;
+  }
+  .container .portfolio .portfolio__title .portfolio__title-second {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 48px;
+  }
+  .container .portfolio .portfolio__title p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .container .portfolio .portfolio__title .portfolio__arrows {
+    margin-top: 235px;
+  }
+  .container .portfolio .portfolio__title .portfolio__arrows .arrow {
+    margin-right: 8px;
+  }
+  .container .portfolio .portfolio__images {
+    display: flex;
+    margin-top: 274px;
+    margin-bottom: 145px;
+    margin-left: 165px;
+  }
+  .container .portfolio .portfolio__images .side-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .portfolio .portfolio__images .side-left .img-1 {
+    margin-bottom: 26px;
+    margin-right: 30px;
+  }
+  .container .portfolio .portfolio__images .side-left img {
+    width: 350px;
+  }
+  .container .portfolio .portfolio__images .side-right {
+    display: flex;
+    flex-direction: column;
+    margin-right: 165px;
+  }
+  .container .portfolio .portfolio__images .side-right .img-1 {
+    margin-bottom: 24px;
+  }
+  .container .portfolio .portfolio__images .side-right img {
+    width: 255px;
+  }
+  .container .Get__in__touch {
+    font-family: "Libre Franklin", sans-serif;
+    background: #FFFAF2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .Get__in__touch .Get__in__touch-title {
+    margin-top: 93px;
+    margin-left: 165px;
+    margin-bottom: 31px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    flex-basis: 100%;
+  }
+  .container .Get__in__touch .Get__in__touch-details {
+    margin-left: 165px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 189px;
+  }
+  .container .Get__in__touch .Get__in__touch-details .left span {
+    margin-bottom: 14px;
+  }
+  .container .Get__in__touch .Get__in__touch-details .side {
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+  }
+  .container .Get__in__touch .Get__in__touch-details .side span {
+    margin-bottom: 14px;
+  }
+  .container .Get__in__touch .Get__in__touch-details a {
+    color: #333333;
+    text-decoration: none;
+  }
+  .container .Get__in__touch .Get__in__touch-footer {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .container .Get__in__touch .Get__in__touch-footer .mail {
+    margin-bottom: 14px;
+  }
+  .container .Get__in__touch .Get__in__touch-footer a {
+    margin-top: 239px;
+    margin-left: 363px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 815px) {
+  .container .hero-block-mb {
+    width: 100%;
+    height: 100%;
+    font-family: "Libre Franklin", sans-serif;
+    background: no-repeat, rgba(198, 108, 73, 0.4);
+    background-image: url(../img/background-for-mobile.svg);
+    background-size: cover;
+    color: #ffffff;
+  }
+  .container .hero-block-mb .header-mb .header__navigation-mb {
+    margin-left: 34px;
+  }
+  .container .hero-block-mb .header-mb .header__navigation-mb .header__navigation-title-mb {
+    display: flex;
+  }
+  .container .hero-block-mb .header-mb .header__navigation-mb .header__navigation-title-mb span {
     margin-top: 43px;
   }
-  .container .hero-block .header-mobile .header__navigation .header__navigation-title .header__navigation-titles {
+  .container .hero-block-mb .header-mb .header__navigation-mb .header__navigation-title-mb .header__navigation-titles-mb {
     flex-basis: 100%;
     text-align: center;
     font-style: normal;
@@ -38,18 +319,18 @@
     line-height: 29px;
     margin-right: 9%;
   }
-  .container .hero-block .header-mobile .header__navigation .header__navigation-title .header__navigation-titles a {
+  .container .hero-block-mb .header-mb .header__navigation-mb .header__navigation-title-mb .header__navigation-titles-mb a {
     text-decoration: none;
     color: #ffffff;
   }
-  .container .hero-block .header-mobile .menu {
+  .container .hero-block-mb .header-mb .header__navigation-mb .menu-mb {
     display: none;
   }
-  .container .hero-block .hero-block__information {
+  .container .hero-block-mb .hero-block__information-mb {
     display: flex;
     flex-direction: column;
   }
-  .container .hero-block .hero-block__information .hero-block__information__main-title {
+  .container .hero-block-mb .hero-block__information-mb .hero-block__information__main-title-mb {
     margin-top: 50px;
     font-style: normal;
     font-weight: normal;
@@ -57,14 +338,14 @@
     font-size: 20px;
     line-height: 24px;
   }
-  .container .hero-block .hero-block__information .hero-block__information__second-title {
+  .container .hero-block-mb .hero-block__information-mb .hero-block__information__second-title-mb {
     font-style: normal;
     font-weight: normal;
     text-align: center;
     font-size: 13px;
     line-height: 16px;
   }
-  .container .hero-block .hero-block__information .hero-block__information__latest-works {
+  .container .hero-block-mb .hero-block__information-mb .hero-block__information__latest-works-mb {
     margin: 41px 0 50px 0;
     font-style: normal;
     font-weight: normal;
@@ -73,10 +354,10 @@
     line-height: 16px;
     text-decoration-line: underline;
   }
-  .container .hero-block .hero-block__information .hero-block__information__latest-works a {
+  .container .hero-block-mb .hero-block__information-mb .hero-block__information__latest-works-mb a {
     color: #ffffff;
   }
-  .container .hero-block .hero-block__information .hero-block__information__latest-works a:hover {
+  .container .hero-block-mb .hero-block__information-mb .hero-block__information__latest-works-mb a:hover {
     font-size: 14px;
     color: #fff3e6;
   }
@@ -199,23 +480,23 @@
     line-height: 15px;
     text-align: center;
   }
+  .container .portfolio-mobile .portfolio__title .portfolio__arrows {
+    display: none;
+  }
   .container .portfolio-mobile .portfolio__images {
     display: flex;
     margin-bottom: 25px;
   }
-  .container .portfolio-mobile .portfolio__images .portfolio__arrows {
-    display: none;
-  }
-  .container .portfolio-mobile .side-left {
+  .container .portfolio-mobile .portfolio__images .side-left {
     margin-left: 34px;
   }
-  .container .portfolio-mobile .side-left img {
+  .container .portfolio-mobile .portfolio__images .side-left img {
     margin-bottom: 12px;
   }
-  .container .portfolio-mobile .side-right {
+  .container .portfolio-mobile .portfolio__images .side-right {
     margin-right: 33px;
   }
-  .container .portfolio-mobile .side-right img {
+  .container .portfolio-mobile .portfolio__images .side-right img {
     margin-bottom: 11px;
   }
   .container .Get__in__touch-mobile {
