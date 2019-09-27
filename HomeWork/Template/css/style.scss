@@ -1,493 +1,503 @@
-@import 'mixin.scss';
-@import 'variables.scss';
-* {
-    font-family: $font_family;
-}
-
-.container {
-    width: 100%;
-    @media screen and (min-width: 700px) {
-        //start hero-block
-        .hero-block {
-            width: 100%;
-            height: 100%;
-            font-family: $font_family;
-            background: no-repeat, rgba(198, 108, 73, 0.4);
-            background-image: url(../img/background-for-mobile.svg);
-            background-size: cover;
-            color: #ffffff;
-            //start header
-            .header {
-                display: flex;
-                .header__navigation {
-                    display: flex;
-                    margin-top: 93px;
-                    margin-left: 165px;
-                    .header__navigation-title {
-                        span {
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 24px;
-                            line-height: 29px;
-                        }
-                    }
-                    .menu {
+    @import 'mixin.scss';
+    @import 'variables.scss';
+    * {
+        font-family: $font_family;
+    }
+    
+    .row {
+        margin-top: 93px;
+        margin-left: 165px;
+        margin-right: 165px;
+    }
+    
+    .container {
+        width: 100%;
+        @media screen and (min-width: 700px) {
+            //start hero-block
+            .hero-block {
+                width: 100%;
+                height: 100%;
+                font-family: $font_family;
+                background: no-repeat, rgba(198, 108, 73, 0.4);
+                background-image: url(../img/background-for-mobile.svg);
+                background-size: cover;
+                color: #ffffff;
+                //start header
+                .header {
+                    .header__navigation {
                         display: flex;
-                        flex-basis: 1;
-                        li {
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: 22px;
-                            a {
-                                text-decoration: none;
-                                color: #fff;
+                        .header__navigation-title {
+                            margin-right: 464px;
+                            span {
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 24px;
+                                line-height: 29px;
+                                a {
+                                    text-decoration: none;
+                                    color: #ffffff;
+                                }
                             }
                         }
-                    }
-                }
-            } //close header
-            // start hero-block__information
-            .hero-block__information {
-                margin-left: 163px;
-                display: flex;
-                flex-direction: column;
-                .hero-block__information__main-title {
-                    margin: 145px 0 26px;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 64px;
-                    line-height: 78px;
-                    display: flex;
-                    align-items: center;
-                }
-                .hero-block__information__second-title {
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 24px;
-                    line-height: 29px;
-                }
-                .hero-block__information__latest-works {
-                    margin: 106px 0 240px;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 22px;
-                    text-decoration-line: underline;
-                    a {
-                        color: #fff;
-                    }
-                }
-            }
-            // close hero-block__information
-        } //close hero-block
-        //start about
-        .about {
-            margin: 93px 165px 115px 165px;
-            display: flex;
-            flex-direction: column;
-            color: #333333;
-            font-family: $font_family;
-            .about__title {
-                margin-bottom: 76px;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 29px;
-            }
-            .about__information {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 30px;
-                text-align: justify;
-                margin-bottom: 115px;
-            }
-        } //close about
-        //start skills
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            background: #FFFAF2;
-            font-family: $font_family;
-            .profile_title {
-                margin-top: 93px;
-                margin-left: 165px;
-                margin-bottom: 86px;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 29px;
-                flex-basis: 100%;
-            }
-            .profile-images {
-                margin-left: 165px;
-                margin-right: 125px;
-                margin-bottom: 145px;
-                img {
-                    width: 350px;
-                    height: 350px;
-                }
-            }
-            .profile-details {
-                display: flex;
-                .profile-details-block-left-side {
-                    flex-basis: 1;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 25px;
-                    display: flex;
-                    flex-direction: column;
-                    padding-right: 78px;
-                }
-                .profile-details-block-right-side {
-                    flex-basis: 1;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 25px;
-                    display: flex;
-                    flex-direction: column;
-                }
-                .profile-details-block-right-side,
-                .profile-details-block-left-side {
-                    .col-1 {
-                        margin-bottom: 65px;
-                    }
-                    .col-2,
-                    .col-3,
-                    .col-4,
-                    .col-5,
-                    .col-6 {
-                        margin-bottom: 20px;
-                    }
-                }
-            }
-        } //close skills
-        //start portfolio
-        .portfolio {
-            display: flex;
-            font-family: $font_family;
-            .row {
-                margin: 93px 0px 145px 165px;
-                .portfolio__title {
-                    display: flex;
-                    flex-direction: column;
-                    .portfolio__title-main {
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 24px;
-                        line-height: 29px;
-                        margin-bottom: 48px;
-                    }
-                    .portfolio__title-second {
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 18px;
-                        line-height: 25px;
-                        margin-bottom: 48px;
-                    }
-                }
-                .portfolio__images {
-                    display: flex;
-                    flex-wrap: wrap;
-                    .portfolio__info {
-                        flex-basis: 350px;
-                        margin-right: 126px;
-                        p {
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 30px;
-                            text-align: justify;
-                        }
-                        .portfolio__arrows {
+                        .menu {
                             display: flex;
-                            span {
-                                margin-top: 235px;
-                                .arrow {
-                                    margin-right: 14px;
+                            flex-basis: 1;
+                            li {
+                                margin-right: 60px;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 18px;
+                                line-height: 22px;
+                                a {
+                                    text-decoration: none;
+                                    color: #fff;
                                 }
                             }
                         }
                     }
-                    .side-left {
-                        display: flex;
-                        flex-direction: column;
-                        .img-1 {
-                            margin-bottom: 26px;
-                            margin-right: 30px;
-                        }
-                        img {
-                            width: 350px;
-                        }
-                    }
-                    .side-right {
-                        display: flex;
-                        flex-direction: column;
-                        .img-1 {
-                            margin-bottom: 24px;
-                        }
-                        img {
-                            width: 255px;
-                        }
-                        .portfolio-images {}
-                    }
-                    .side-left,
-                    .side-right {}
-                }
-            }
-        }
-        //end portfolio
-        //start Get_in_touch
-        .Get__in__touch {
-            font-family: $font_family;
-            display: flex;
-            flex-wrap: wrap;
-            background: #FFFAF2;
-            .Get__in__touch-title {
-                margin-top: 93px;
-                margin-left: 165px;
-                margin-bottom: 31px;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 29px;
-                flex-basis: 100%;
-            }
-            .Get__in__touch-details {
-                display: flex;
-                flex-direction: row;
-                margin-left: 165px;
-                margin-bottom: 189px;
-                margin-right: 300px;
-                .left {
+                } //close header
+                // start hero-block__information
+                .hero-block__information {
                     display: flex;
                     flex-direction: column;
+                    .hero-block__information__main-title {
+                        margin: 145px 0 26px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 64px;
+                        line-height: 78px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .hero-block__information__second-title {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 24px;
+                        line-height: 29px;
+                    }
+                    .hero-block__information__latest-works {
+                        margin: 106px 0 240px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 22px;
+                        text-decoration-line: underline;
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+                // close hero-block__information
+            } //close hero-block
+            //start about
+            .about {
+                display: flex;
+                flex-direction: column;
+                color: #333333;
+                font-family: $font_family;
+                .about__title {
+                    margin-bottom: 76px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+                .about__information {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 30px;
+                    text-align: justify;
+                    margin-bottom: 115px;
+                }
+            } //close about
+            //start skills
+            .skills {
+                display: flex;
+                flex-wrap: wrap;
+                background: #FFFAF2;
+                font-family: $font_family;
+                .profile_title {
+                    margin-bottom: 86px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 29px;
+                    flex-basis: 100%;
+                }
+                .profile-images {
+                    margin-right: 125px;
+                    margin-bottom: 145px;
+                    img {
+                        width: 350px;
+                        height: 350px;
+                    }
+                }
+                .profile-details {
+                    display: flex;
+                    .profile-details-block-left-side {
+                        flex-basis: 1;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 25px;
+                        display: flex;
+                        flex-direction: column;
+                        padding-right: 78px;
+                    }
+                    .profile-details-block-right-side {
+                        flex-basis: 1;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .profile-details-block-right-side,
+                    .profile-details-block-left-side {
+                        .col-1 {
+                            margin-bottom: 65px;
+                        }
+                        .col-2,
+                        .col-3,
+                        .col-4,
+                        .col-5,
+                        .col-6 {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            } //close skills
+            //start portfolio
+            .portfolio {
+                display: flex;
+                font-family: $font_family;
+                .row {
+                    margin: 93px 0px 145px 165px;
+                    .portfolio__title {
+                        display: flex;
+                        flex-direction: column;
+                        .portfolio__title-main {
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 29px;
+                            margin-bottom: 48px;
+                        }
+                        .portfolio__title-second {
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 25px;
+                            margin-bottom: 48px;
+                        }
+                    }
+                    .portfolio__images {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .portfolio__info {
+                            flex-basis: 350px;
+                            margin-right: 126px;
+                            p {
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 30px;
+                                text-align: justify;
+                            }
+                            .portfolio__arrows {
+                                display: flex;
+                                span {
+                                    margin-top: 235px;
+                                    .arrow {
+                                        margin-right: 14px;
+                                    }
+                                    a {}
+                                }
+                            }
+                        }
+                        .side-left {
+                            display: flex;
+                            flex-direction: column;
+                            .img-1 {
+                                margin-bottom: 26px;
+                                margin-right: 30px;
+                            }
+                            img {
+                                width: 350px;
+                            }
+                        }
+                        .side-right {
+                            display: flex;
+                            flex-direction: column;
+                            .img-1 {
+                                margin-bottom: 24px;
+                            }
+                            img {
+                                width: 255px;
+                            }
+                            .portfolio-images {}
+                        }
+                        .side-left,
+                        .side-right {}
+                    }
+                }
+            }
+            //end portfolio
+            //start Get_in_touch
+            .Get__in__touch {
+                font-family: $font_family;
+                display: flex;
+                flex-wrap: wrap;
+                background: #FFFAF2;
+                .Get__in__touch-title {
+                    margin-top: 93px;
+                    margin-left: 165px;
+                    margin-bottom: 31px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 29px;
+                    flex-basis: 100%;
+                }
+                .Get__in__touch-details {
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 165px;
+                    margin-bottom: 189px;
                     margin-right: 300px;
-                    span {
-                        margin-bottom: 14px;
+                    .left {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 300px;
+                        span {
+                            margin-bottom: 14px;
+                        }
+                    }
+                    .side {
+                        display: flex;
+                        flex-direction: column;
+                        span {
+                            margin-bottom: 14px;
+                        }
+                    }
+                    a {
+                        color: #333333;
+                        text-decoration: none;
                     }
                 }
-                .side {
+                .Get__in__touch-footer {
                     display: flex;
-                    flex-direction: column;
-                    span {
+                    flex-flow: column wrap;
+                    .mail {
                         margin-bottom: 14px;
                     }
                 }
-            }
-            .Get__in__touch-footer {
-                display: flex;
-                flex-flow: column wrap;
-                .mail {
-                    margin-bottom: 14px;
+                .Get__in__touch-arrow {
+                    margin-left: 143px;
+                    margin-top: 239px;
+                    margin-right: 180px;
                 }
-            }
-            .Get__in__touch-arrow {
-                margin-left: 143px;
-                margin-top: 239px;
-                margin-right: 180px;
             }
         }
-    }
-    //end Get_in_touch
-    // @media screen and (min-width: 351px) {
-    //     //start header
-    //     .header {
-    //         display: flex;
-    //         .header__navigation {
-    //             margin: 39px 0px 0px 34px;
-    //             flex-grow: 1;
-    //             align-self: flex-end;
-    //             img {
-    //                 width: 24px;
-    //                 height: 24px;
-    //             }
-    //         }
-    //         .header__title {
-    //             flex-grow: 99;
-    //             margin: 36px 128px 0px 71px;
-    //             text-align: center;
-    //             span {
-    //                 font-style: normal;
-    //                 font-weight: bold;
-    //                 font-size: 24px;
-    //                 line-height: 29px;
-    //             }
-    //         }
-    //     } //close header
-    //     // // start hero-block__information
-    //     .hero-block__information {
-    //         display: flex;
-    //         flex-direction: column;
-    //         .hero-block__information__main-title {
-    //             margin-top: 50px;
-    //             @include font_style_align_weight_size_line(20px, 24px);
-    //         }
-    //         .hero-block__information__second-title {
-    //             @include font_style_align_weight_size_line(13px, 16px);
-    //         }
-    //         .hero-block__information__latest-works {
-    //             margin: 41px 0 50px 0;
-    //             @include font_style_align_weight_size_line(13px, 16px);
-    //             text-decoration-line: underline;
-    //             a {
-    //                 color: #ffffff;
-    //             }
-    //             a:hover {
-    //                 font-size: 14px;
-    //                 color: #fff3e6;
-    //             }
-    //         }
-    //     } // close hero-block__information
-    //     // //start about
-    //     .about {
-    //         display: flex;
-    //         flex-direction: column;
-    //         color: #333333;
-    //         font-family: $font_family;
-    //         .about__title {
-    //             margin-top: 25px;
-    //             @include font_style_weight_size_height( 600, 24px, 29px);
-    //         }
-    //         .about__information {
-    //             margin: 19px 29px 8px 34px;
-    //             @include font_style_weight_size_height_align(normal, 12px, 15px, justify);
-    //         }
-    //     } //close about
-    //     // //start skills
-    //     .skills {
-    //         display: flex;
-    //         flex-direction: column;
-    //         justify-content: center;
-    //         background: #FFFAF2;
-    //         font-family: $font_family;
-    //         .profile_title {
-    //             margin-top: 25px;
-    //             @include font_style_weight_size_height_align( 600, 24px, 29px, center);
-    //         }
-    //         .profile-images {
-    //             display: flex;
-    //             justify-content: center;
-    //             margin-bottom: 26px;
-    //             img {
-    //                 width: 214px;
-    //                 height: 224px;
-    //             }
-    //         }
-    //         .profile-details {
-    //             display: flex;
-    //             flex-flow: row wrap;
-    //             justify-content: center;
-    //             .profile-details-block-left-side {
-    //                 margin-left: 34px;
-    //                 @include fonts_display_direction_font-weight(600);
-    //             }
-    //             .profile-details-block-right-side {
-    //                 margin-bottom: 25px;
-    //                 @include fonts_display_direction_font-weight(normal);
-    //             }
-    //             .profile-details-block-right-side,
-    //             .profile-details-block-left-side {
-    //                 .col-1 {
-    //                     margin-top: 26px;
-    //                     margin-bottom: 31px;
-    //                 }
-    //                 .col-3 {
-    //                     margin-top: 9px;
-    //                     margin-bottom: 18px;
-    //                 }
-    //                 .col-5 {
-    //                     margin-top: 10px;
-    //                     margin-bottom: 18px;
-    //                 }
-    //                 .col-7 {
-    //                     margin-top: 8px;
-    //                 }
-    //             }
-    //         }
-    //     } //close skills
-    //     //start portfolio
-    //     .portfolio {
-    //         display: flex;
-    //         flex-direction: column;
-    //         justify-content: center;
-    //         font-family: $font_family;
-    //         .portfolio__title {
-    //             display: flex;
-    //             flex-direction: column;
-    //             .portfolio__title-main {
-    //                 margin: 25px 0 19px;
-    //                 @include font_style_weight_size_height_align( 600, 24px, 29px, center);
-    //             }
-    //             .portfolio__title-second {
-    //                 margin-bottom: 15px;
-    //                 @include font_style_weight_size_height_align( 500, 14px, 25px, center);
-    //             }
-    //         }
-    //         .portfolio__info {
-    //             p {
-    //                 padding-bottom: 25px;
-    //                 @include font_style_align_weight_size_line(12px, 15px);
-    //             }
-    //         }
-    //         .portfolio__images {
-    //             display: flex;
-    //             margin-bottom: 25px;
-    //             .side-left {
-    //                 margin-left: 34px;
-    //                 margin-right: 14px;
-    //                 .portfolio-images {
-    //                     margin-bottom: 12px;
-    //                 }
-    //             }
-    //             .side-right {
-    //                 margin-right: 33px;
-    //                 .portfolio-images {
-    //                     margin-bottom: 10px;
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     //end portfolio
-    //     //start Get_in_touch
-    //     .Get__in__touch {
-    //         display: flex;
-    //         flex-direction: column;
-    //         font-family: $font_family;
-    //         justify-content: center;
-    //         background: #FFFAF2;
-    //         .Get__in__touch-title {
-    //             margin: 3px 0 22px;
-    //             @include font_style_weight_size_height(600, 24px, 29px);
-    //         }
-    //         .Get__in__touch-details {
-    //             display: flex;
-    //             margin-bottom: 30px;
-    //             .left {
-    //                 margin-left: 42px;
-    //             }
-    //             .side {
-    //                 flex-basis: 50%;
-    //             }
-    //             span {
-    //                 display: block;
-    //                 margin-top: 19px;
-    //             }
-    //         }
-    //         .Get__in__touch-footer {
-    //             display: flex;
-    //             justify-content: space-between;
-    //             p {
-    //                 margin: 0 0 50px 42px;
-    //             }
-    //             span {
-    //                 margin: 0 32px 58px 0;
-    //             }
-    //         }
-    //     }
-    // //end Get_in_touch
-    // }
-} //close container
+        //end Get_in_touch
+        @media screen and (min-width: 351px) {
+            //     //start header
+            .header {
+                display: flex;
+                .header__navigation {
+                    margin: 39px 0px 0px 34px;
+                    flex-grow: 1;
+                    align-self: flex-end;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                .header__title {
+                    flex-grow: 99;
+                    margin: 36px 128px 0px 71px;
+                    text-align: center;
+                    span {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 29px;
+                    }
+                }
+            }
+            //     } //close header
+            //     // // start hero-block__information
+            //     .hero-block__information {
+            //         display: flex;
+            //         flex-direction: column;
+            //         .hero-block__information__main-title {
+            //             margin-top: 50px;
+            //             @include font_style_align_weight_size_line(20px, 24px);
+            //         }
+            //         .hero-block__information__second-title {
+            //             @include font_style_align_weight_size_line(13px, 16px);
+            //         }
+            //         .hero-block__information__latest-works {
+            //             margin: 41px 0 50px 0;
+            //             @include font_style_align_weight_size_line(13px, 16px);
+            //             text-decoration-line: underline;
+            //             a {
+            //                 color: #ffffff;
+            //             }
+            //             a:hover {
+            //                 font-size: 14px;
+            //                 color: #fff3e6;
+            //             }
+            //         }
+            //     } // close hero-block__information
+            //     // //start about
+            //     .about {
+            //         display: flex;
+            //         flex-direction: column;
+            //         color: #333333;
+            //         font-family: $font_family;
+            //         .about__title {
+            //             margin-top: 25px;
+            //             @include font_style_weight_size_height( 600, 24px, 29px);
+            //         }
+            //         .about__information {
+            //             margin: 19px 29px 8px 34px;
+            //             @include font_style_weight_size_height_align(normal, 12px, 15px, justify);
+            //         }
+            //     } //close about
+            //     // //start skills
+            //     .skills {
+            //         display: flex;
+            //         flex-direction: column;
+            //         justify-content: center;
+            //         background: #FFFAF2;
+            //         font-family: $font_family;
+            //         .profile_title {
+            //             margin-top: 25px;
+            //             @include font_style_weight_size_height_align( 600, 24px, 29px, center);
+            //         }
+            //         .profile-images {
+            //             display: flex;
+            //             justify-content: center;
+            //             margin-bottom: 26px;
+            //             img {
+            //                 width: 214px;
+            //                 height: 224px;
+            //             }
+            //         }
+            //         .profile-details {
+            //             display: flex;
+            //             flex-flow: row wrap;
+            //             justify-content: center;
+            //             .profile-details-block-left-side {
+            //                 margin-left: 34px;
+            //                 @include fonts_display_direction_font-weight(600);
+            //             }
+            //             .profile-details-block-right-side {
+            //                 margin-bottom: 25px;
+            //                 @include fonts_display_direction_font-weight(normal);
+            //             }
+            //             .profile-details-block-right-side,
+            //             .profile-details-block-left-side {
+            //                 .col-1 {
+            //                     margin-top: 26px;
+            //                     margin-bottom: 31px;
+            //                 }
+            //                 .col-3 {
+            //                     margin-top: 9px;
+            //                     margin-bottom: 18px;
+            //                 }
+            //                 .col-5 {
+            //                     margin-top: 10px;
+            //                     margin-bottom: 18px;
+            //                 }
+            //                 .col-7 {
+            //                     margin-top: 8px;
+            //                 }
+            //             }
+            //         }
+            //     } //close skills
+            //     //start portfolio
+            //     .portfolio {
+            //         display: flex;
+            //         flex-direction: column;
+            //         justify-content: center;
+            //         font-family: $font_family;
+            //         .portfolio__title {
+            //             display: flex;
+            //             flex-direction: column;
+            //             .portfolio__title-main {
+            //                 margin: 25px 0 19px;
+            //                 @include font_style_weight_size_height_align( 600, 24px, 29px, center);
+            //             }
+            //             .portfolio__title-second {
+            //                 margin-bottom: 15px;
+            //                 @include font_style_weight_size_height_align( 500, 14px, 25px, center);
+            //             }
+            //         }
+            //         .portfolio__info {
+            //             p {
+            //                 padding-bottom: 25px;
+            //                 @include font_style_align_weight_size_line(12px, 15px);
+            //             }
+            //         }
+            //         .portfolio__images {
+            //             display: flex;
+            //             margin-bottom: 25px;
+            //             .side-left {
+            //                 margin-left: 34px;
+            //                 margin-right: 14px;
+            //                 .portfolio-images {
+            //                     margin-bottom: 12px;
+            //                 }
+            //             }
+            //             .side-right {
+            //                 margin-right: 33px;
+            //                 .portfolio-images {
+            //                     margin-bottom: 10px;
+            //                 }
+            //             }
+            //         }
+            //     }
+            //     //end portfolio
+            //     //start Get_in_touch
+            //     .Get__in__touch {
+            //         display: flex;
+            //         flex-direction: column;
+            //         font-family: $font_family;
+            //         justify-content: center;
+            //         background: #FFFAF2;
+            //         .Get__in__touch-title {
+            //             margin: 3px 0 22px;
+            //             @include font_style_weight_size_height(600, 24px, 29px);
+            //         }
+            //         .Get__in__touch-details {
+            //             display: flex;
+            //             margin-bottom: 30px;
+            //             .left {
+            //                 margin-left: 42px;
+            //             }
+            //             .side {
+            //                 flex-basis: 50%;
+            //             }
+            //             span {
+            //                 display: block;
+            //                 margin-top: 19px;
+            //             }
+            //         }
+            //         .Get__in__touch-footer {
+            //             display: flex;
+            //             justify-content: space-between;
+            //             p {
+            //                 margin: 0 0 50px 42px;
+            //             }
+            //             span {
+            //                 margin: 0 32px 58px 0;
+            //             }
+            //         }
+            //     }
+            // //end Get_in_touch
+        }
+    } //close container

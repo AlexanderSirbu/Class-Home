@@ -2,6 +2,12 @@
   font-family: "Libre Franklin", sans-serif;
 }
 
+.row {
+  margin-top: 93px;
+  margin-left: 165px;
+  margin-right: 165px;
+}
+
 .container {
   width: 100%;
 }
@@ -15,13 +21,11 @@
     background-size: cover;
     color: #ffffff;
   }
-  .container .hero-block .header {
-    display: flex;
-  }
   .container .hero-block .header .header__navigation {
     display: flex;
-    margin-top: 93px;
-    margin-left: 165px;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title {
+    margin-right: 464px;
   }
   .container .hero-block .header .header__navigation .header__navigation-title span {
     font-style: normal;
@@ -29,11 +33,16 @@
     font-size: 24px;
     line-height: 29px;
   }
+  .container .hero-block .header .header__navigation .header__navigation-title span a {
+    text-decoration: none;
+    color: #ffffff;
+  }
   .container .hero-block .header .header__navigation .menu {
     display: flex;
     flex-basis: 1;
   }
   .container .hero-block .header .header__navigation .menu li {
+    margin-right: 60px;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -44,7 +53,6 @@
     color: #fff;
   }
   .container .hero-block .hero-block__information {
-    margin-left: 163px;
     display: flex;
     flex-direction: column;
   }
@@ -75,7 +83,6 @@
     color: #fff;
   }
   .container .about {
-    margin: 93px 165px 115px 165px;
     display: flex;
     flex-direction: column;
     color: #333333;
@@ -103,8 +110,6 @@
     font-family: "Libre Franklin", sans-serif;
   }
   .container .skills .profile_title {
-    margin-top: 93px;
-    margin-left: 165px;
     margin-bottom: 86px;
     font-style: normal;
     font-weight: bold;
@@ -113,7 +118,6 @@
     flex-basis: 100%;
   }
   .container .skills .profile-images {
-    margin-left: 165px;
     margin-right: 125px;
     margin-bottom: 145px;
   }
@@ -267,6 +271,10 @@
   .container .Get__in__touch .Get__in__touch-details .side span {
     margin-bottom: 14px;
   }
+  .container .Get__in__touch .Get__in__touch-details a {
+    color: #333333;
+    text-decoration: none;
+  }
   .container .Get__in__touch .Get__in__touch-footer {
     display: flex;
     flex-flow: column wrap;
@@ -278,6 +286,31 @@
     margin-left: 143px;
     margin-top: 239px;
     margin-right: 180px;
+  }
+}
+@media screen and (min-width: 351px) {
+  .container .header {
+    display: flex;
+  }
+  .container .header .header__navigation {
+    margin: 39px 0px 0px 34px;
+    flex-grow: 1;
+    align-self: flex-end;
+  }
+  .container .header .header__navigation img {
+    width: 24px;
+    height: 24px;
+  }
+  .container .header .header__title {
+    flex-grow: 99;
+    margin: 36px 128px 0px 71px;
+    text-align: center;
+  }
+  .container .header .header__title span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
   }
 }
 
