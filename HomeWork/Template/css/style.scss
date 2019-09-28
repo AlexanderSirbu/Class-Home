@@ -189,7 +189,7 @@
             display: flex;
             flex-wrap: wrap;
             .Get__in__touch-title {
-                margin-bottom: 31px;
+                margin-bottom: 51px;
                 @include margin_top_and_left();
                 flex-basis: 100%;
                 @include font_style_weight_size_height(normal, bold, 24px, 29px);
@@ -293,6 +293,7 @@
             flex-direction: column;
             font-family: $font-family;
             .about__title {
+                margin-top: 25px;
                 @include font_style_weight_size_height_align(normal, 600, 24px, 29px, center);
             }
             .about__information {
@@ -306,7 +307,7 @@
             flex-direction: column;
             @include font_family_and_bg;
             .profile_title {
-                margin-top: 25px;
+                margin: 25px 0;
                 @include font_style_weight_size_height_align(normal, 600, 24px, 29px, center);
             }
             .profile-details {

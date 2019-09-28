@@ -234,7 +234,7 @@
     flex-wrap: wrap;
   }
   .container .Get__in__touch .Get__in__touch-title {
-    margin-bottom: 31px;
+    margin-bottom: 51px;
     margin-top: 93px;
     margin-left: 165px;
     flex-basis: 100%;
@@ -349,6 +349,7 @@
     font-family: "Libre Franklin", sans-serif;
   }
   .container .about .about__title {
+    margin-top: 25px;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -370,7 +371,7 @@
     background: #FFFAF2;
   }
   .container .skills .profile_title {
-    margin-top: 25px;
+    margin: 25px 0;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
