@@ -19,6 +19,6 @@ switch(product) {
         console.log("Mangoes and papayas are $2.59 a pound");
         break;
     default:
-        console.log("Sorry,we are out og " + ".");
+        console.log("Sorry, " + product + " we dont have.");
 }
 console.log("If there anything else you'd like?");
