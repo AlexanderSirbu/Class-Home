@@ -21,6 +21,19 @@ document.getElementById("callif").onclick = function () {
     } 
 }
 
+document.getElementById("callifwith").onclick = function () {
+var work = prompt("Write any day of the week");
+
+if(work == "Monday" || work == "Tuesday" || work == "Wednesday" || work == "Thursday" || work == "Friday"){
+    alert("working day");
+}else if(work == "Saturday" || work == "Sunday"){
+    alert("weekend day");
+}else{
+    alert("Can not define,please try another value!");
+}
+}
+
+
 document.getElementById("callswitch").onclick = function () {
     var work = prompt("Write any day of the week")
 

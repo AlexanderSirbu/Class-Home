@@ -31,6 +31,9 @@
   text-decoration: none;
   color: #f1c990;
 }
+.container .row button:nth-last-of-type(2) {
+  margin-left: 20px;
+}
 .container .row button:last-child {
   margin-left: 20px;
 }
