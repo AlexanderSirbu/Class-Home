@@ -1,0 +1,324 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+h1 {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 36px;
+  line-height: 49px;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+h3 {
+  font-size: 28px;
+  line-height: 33px;
+  color: #333333;
+  font-weight: normal;
+}
+h6 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+}
+.btn {
+  width: 181px;
+  height: 59px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  display: block;
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+}
+.row {
+  padding-left: 176px;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  .hero__block {
+    .hero__block__header {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #990000;
+      .logo {
+        margin: 26px 338px 29px 0px;
+      }
+      .btn__menu {
+        display: none;
+      }
+      .menu {
+        display: flex;
+        .menu__items {
+          display: block;
+          font-size: 20px;
+          line-height: 27px;
+          letter-spacing: 0.03em;
+          font-weight: bold;
+          margin-right: 41px;
+        }
+      }
+    }
+    .hero__block__main {
+      padding-bottom: 216px;
+      background: url("../img/bg.png") no-repeat center right;
+      .hero__block__main__title {
+        padding-top: 215px;
+        padding-bottom: 17px;
+      }
+      .btn__hero__block {
+        color: #fff;
+        background-color: #990000;
+        margin-top: 51px;
+      }
+    }
+  }
+  .our__philosophy {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 148px;
+    padding-bottom: 146px;
+    color: #fff;
+    background: #990000 url(../img/bgourphilosophy.png) no-repeat center right / 639px;
+    .our__philosophy__title {
+      color: #fff;
+      padding-bottom: 26px;
+      flex-basis: 100%;
+    }
+    .our__philosophy__details {
+      width: 510px;
+    }
+    .btn__our__philosophy {
+      background-color: #fff;
+      color: #990000;
+      flex-basis: 1;
+      margin-top: 80px;
+      margin-left: 350px;
+    }
+  }
+  .working__dynamics {
+    padding-top: 107px;
+    padding-bottom: 107px;
+    background: url(../img/bgworkingdymanics.png) no-repeat center bottom/1550px;
+    .working__dynamics__title {
+      margin-bottom: 122px;
+      text-align: center;
+    }
+    .working__dynamics__title::after {
+      content: "";
+      display: block;
+      width: 100px;
+      margin-top: 14px;
+      margin-left: 545px;
+      border-bottom: 10px solid #990000;
+    }
+
+    .working__dynamics__main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 243px;
+      .working__dynamics__items {
+        flex-basis: 50%;
+        margin-bottom: 90px;
+        .working__dynamics__item__title {
+        }
+        .working__dynamics__item__informations {
+          width: 370px;
+        }
+      }
+    }
+  }
+  .footer {
+    background: #990000 url(../img/bgourphilosophy.png) no-repeat center right / 639px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    .contacts {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      margin-right: 500px;
+      margin-left: 100px;
+    }
+    .socials {
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 1230px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    .hero__block {
+      .hero__block__header {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #990000;
+        justify-content: space-between;
+        .logo {
+          margin: 26px 0px 29px 0px;
+        }
+        
+      
+      .menu {
+        display: none;
+        .menu__items {
+          display: block;
+          font-size: 20px;
+          line-height: 27px;
+          letter-spacing: 0.03em;
+          font-weight: bold;
+          margin-right: 41px;
+        }
+      }
+      .btn__menu {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .menu__btn {
+            margin-right: 100px;
+          display: block;
+          width: 75px;
+          height: 75px;
+          background: #fff;
+          border-radius: 50px;
+          position: relative;
+          span,
+          span::before,
+          span::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -1px;
+            margin-left: -10px;
+            width: 20px;
+            height: 2px;
+            background-color: #222222;
+          }
+          span::before,
+          span::after {
+            content: "";
+            display: block;
+            transition: 0.5s;
+          }
+          span::before {
+            transform: translateY(-5px);
+          }
+          span::after {
+            transform: translateY(5px);
+          }
+        }
+      }
+    }
+    .hero__block__main {
+      padding-bottom: 216px;
+      background: url("../img/bg.png") no-repeat center right;
+      .hero__block__main__title {
+        padding-top: 215px;
+        padding-bottom: 17px;
+      }
+      .btn__hero__block {
+        color: #fff;
+        background-color: #990000;
+            margin-top: 51px;
+      }
+    
+    }}}
+    .our__philosophy {
+        display: flex;
+        flex-flow: column wrap;
+        padding-top: 148px;
+        padding-bottom: 146px;
+        justify-content: flex-start;
+        color: #fff;
+        background: #990000 url(../img/bgourphilosophy.png) no-repeat center right / 770px!important;
+        .our__philosophy__title {
+          
+          color: #fff;
+          padding-bottom: 26px;
+          
+        }
+        .our__philosophy__details {
+          width: 510px;
+        }
+        .btn__our__philosophy {
+          background-color: #fff;
+          color: #990000;
+          flex-basis: 1;
+          margin-top: 80px;
+          margin-left: 0px !important;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1150px) {
+
+        .working__dynamics {
+            padding-top: 107px;
+            padding-left: 173px;
+            padding-bottom: 107px;
+            background: url(../img/bgworkingdymanics.png) no-repeat center bottom/1550px;
+            .working__dynamics__title {
+              margin-bottom: 122px;
+              text-align: left !important;
+            }
+            .working__dynamics__title::after {
+              content: "";
+              display: block;
+              width: 100px;
+              margin-top: 14px;
+              margin-left: 0px!important;
+              border-bottom: 10px solid #990000;
+            }
+        
+            .working__dynamics__main {
+              display: flex;
+              flex-flow: column wrap;
+              justify-content: center;
+              margin-left: 0px !important;
+              .working__dynamics__items {
+                flex-basis: 50%;
+                margin-bottom: 90px;
+                .working__dynamics__item__title {
+                }
+                .working__dynamics__item__informations {
+                  width: 370px;
+                }
+              }
+            }
+          }
+          .footer {
+            background: #990000 url(../img/bgourphilosophy.png) no-repeat center right / 639px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            display: flex;
+            .contacts {
+              display: flex;
+              flex-flow: column wrap;
+              align-items: center;
+              margin-right: 100px!important;
+              margin-left: 0px!important;
+            }
+            .socials {
+              cursor: pointer;
+            }
+          }
+    }
