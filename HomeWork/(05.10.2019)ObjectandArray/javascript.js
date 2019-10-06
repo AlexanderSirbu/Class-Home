@@ -13,7 +13,7 @@ console.log(test);
 test.splice(3, 1);
 console.log(test);
 
-test = test.filter(item =>{return  item === +item});
+test = test.filter(item => return  item === +item);
 console.log(test);
 
 newtest = test.map(item => Math.pow(item, 2));
@@ -26,5 +26,3 @@ for(i = 0; i < newtest.length; i++){
     }
 };
 console.log(max);
-//let,cost
-//+item
