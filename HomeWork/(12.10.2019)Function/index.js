@@ -1,8 +1,8 @@
 
 function main() {
-    var a = +prompt("Введите коэфициент a = ");
-    var b = +prompt("Введите коэфициент b = ");
-    var c = +prompt("Введите коэфициент c = ");
+    var a = parseInt(prompt("Введите коэфициент a = "));
+    var b = parseInt(prompt("Введите коэфициент b = "));
+    var c = parseInt(prompt("Введите коэфициент c = "));
     var x1, x2;
     var D = Math.pow(b, 2) - 4 * a * c;
 
