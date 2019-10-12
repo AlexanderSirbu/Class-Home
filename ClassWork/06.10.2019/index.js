@@ -44,21 +44,23 @@ var total = questionPrice + questionPriceCheesse + questionPriceCarrot;
 //     and then show the result in id="your-total-price". If item is not found, then show message "Sorry the
 //     item you are searching is not found".
 
-for (i = 0; i < 1; i++) {
-    var questionItem1 = prompt("Write product"),
-         questionQuantity = +prompt("Quantity of product purchased "),
-         questionPrice = +prompt("write the price of the purchased product");
-     
-    console.log("done");
-    if (questionItem1 != '' && questionItem1 != null &&
-        questionQuantity != null && typeof questionQuantity != "" &&
-        questionPrice != null && typeof questionPrice != "" ) {
-        console.log("done.if");
-    } else {
-        console.log("some problems try one more time");
-        --i;
-    };
 
-};
-;
-document.getElementById("your-total-price2").innerHTML = "<br>name: "+ questionItem1+",<br>price: "+ questionPrice+" ";
+
+// for (i = 0; i < 1; i++) {
+//     var questionItem1 = prompt("Write product"),
+//          questionQuantity = +prompt("Quantity of product purchased "),
+//          questionPrice = +prompt("write the price of the purchased product");
+     
+//     console.log("done");
+//     if (questionItem1 != '' && questionItem1 != null &&
+//         questionQuantity != null && typeof questionQuantity != "" &&
+//         questionPrice != null && typeof questionPrice != "" ) {
+//         console.log("done.if");
+//     } else {
+//         console.log("some problems try one more time");
+//         --i;
+//     };
+
+// };
+// ;
+// document.getElementById("your-total-price2").innerHTML = "<br>name: "+ questionItem1+",<br>price: "+ questionPrice+" ";
