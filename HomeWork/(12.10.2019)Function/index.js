@@ -4,22 +4,21 @@ var c = parseInt(prompt("Введите коэфициент c = "));
 
 
 function getDescriminant() {
-    var D = Math.pow(b, 2) - 4 * a * c;
-   
-    return D;
+    Math.pow(b, 2) - 4 * a * c;
+
+    // return D;
     // can write like this
-    // return Math.pow(b, 2) - 4 * a * c
+    return Math.pow(b, 2) - 4 * a * c
 };
 
 // we can now call our function and assign result to value
-// var descriminant = getDescriminant()
+var descriminant = getDescriminant();
 // then we can pass it to next function
-// rootsOfQuadraticEquation(descriminant)
+rootsOfQuadraticEquation(descriminant);
 
-    // here we don't need this
-    var D = console.log("Дискриминант : " + getDescriminant());
-    console.log(D);
-    // until here
+// here we don't need this
+
+// until here
 
 function rootsOfQuadraticEquation(descriminant) {
     if (descriminant < 0) {
@@ -40,7 +39,3 @@ function rootsOfQuadraticEquation(descriminant) {
         console.log("err");
     }
 };
-
-rootsOfQuadraticEquation();
-
-
