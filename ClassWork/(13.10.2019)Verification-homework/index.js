@@ -36,6 +36,9 @@ function calculateTotal(price, quantity) {
     return price * quantity;
 };
 
+var selectedProduct = getProductFromList(product);
+var totalCost = calculateTotal(selectedProduct.price, quantity);
+
 function calculateWithTVA(totalCost) {
     return totalCost + totalCost * 0.2;
 };
@@ -46,8 +49,7 @@ function updateUITotalCost(totalCost) {
 };
 
 
-var selectedProduct = getProductFromList(product);
-var totalCost = calculateTotal(selectedProduct.price, quantity);
+
 updateUITotalCost(totalCost);
 
 // console.log(totalCost);
