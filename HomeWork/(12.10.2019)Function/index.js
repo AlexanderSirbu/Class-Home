@@ -9,10 +9,12 @@ function getDescriminant() {
     // return D;
     // can write like this
     return Math.pow(b, 2) - 4 * a * c
+   
 };
 
 // we can now call our function and assign result to value
 var descriminant = getDescriminant();
+console.log(descriminant);
 // then we can pass it to next function
 rootsOfQuadraticEquation(descriminant);
 
