@@ -4,7 +4,7 @@ var c = parseInt(prompt("Введите коэфициент c = "));
 
 
 function getDescriminant() {
-    Math.pow(b, 2) - 4 * a * c;
+    
 
     // return D;
     // can write like this
