@@ -1,7 +1,7 @@
 
-const getDescriminant = require('./descrimiant')
+const getDescriminant = require('./descriminant')
 
-const rootsOfQuadraticEquation = require('./root')
+const rootsOfQuadraticEquation = require('./rootsOfQuadraticEquation')
 
 test('Math pow (b,2) - 4*a*c ', () => {
   expect(getDescriminant(1, 1, 1)).toBe(-3)
