@@ -1,0 +1,39 @@
+    .main_container {
+        width: 98%;
+        height: 600px;
+        background: #cabcbc;
+        margin: 1%;
+    }
+
+    .left, .right {
+        height: 95%;
+        width: 48%;
+        float: left;
+        margin: 1%;
+        color: #ebe6e6;
+        text-align: right;
+    }
+
+    .left>.block {
+        height: 49.3%;
+        width: 49.4%;
+        float: left;
+        font-size: 60px;
+    }
+
+    .right>.block {
+        height: 32.6%;
+        width: 32.7%;
+        float: left;
+        font-size: 40px;
+    }
+
+    .block {
+        background: #161073;
+        border: 2px solid #cabcbc;
+    }
+
+    p {
+        margin-top: 63%;
+        opacity: 0.3;
+    }

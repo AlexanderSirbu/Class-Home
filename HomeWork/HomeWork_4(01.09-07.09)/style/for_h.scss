@@ -1,0 +1,4 @@
+@for $i from 6 through 1 {
+  .h#{$i} {font-size: 72 /$i;
+  }
+}

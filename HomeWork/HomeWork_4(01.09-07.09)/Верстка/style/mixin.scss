@@ -1,0 +1,12 @@
+@mixin bg_and_border($bg_color,$border_color,$border_size){
+    border: $border_size solid $border_color;
+    background-color:$bg_color;
+}
+@mixin images($float){
+    float: $float;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    opacity: 0.2;
+    
+}

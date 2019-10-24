@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  background: beige;
+
+  > .categories {
+    display: inline-block;
+    width: 50%;
+    text-decoration: underline;
+    text-transform: uppercase;
+
+    &__horror nav {
+      width: 666px;
+
+       ul {
+        background-color: red;
+        width: 66%;
+
+        li {
+          display: inline-block;
+          list-style: none;
+        }
+      }
+    }
+    &__sci-fi nav {
+      width: 100%;
+        ul {
+        width: 200px;
+        background-color: grey;
+        margin: 5px;
+        padding: 0px;
+         li {
+          margin: 5px 0;
+          padding: 5px;
+          display: inline-block;
+          width: 100%;
+          list-style-type: none;
+        }
+      }
+    }
+  }
+}

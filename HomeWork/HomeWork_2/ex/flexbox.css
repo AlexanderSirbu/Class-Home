@@ -1,0 +1,33 @@
+.container {
+   
+    display: flex;
+    
+
+}
+.logo_menu{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    background:black;
+    
+    
+    
+}
+.logo{
+    width: 100px;
+    height: 25px;
+    background:blue;
+}
+.menu{
+    width: 200px;
+    height: 100px;
+    background: red;
+    
+}
+.container_form{
+    width: 80%;
+    height: 100%;
+    background: green;
+    margin: 0 auto;
+    display: flex;
+}

@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  background: beige;
+}
+.container > .categories {
+  display: inline-block;
+  width: 50%;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.container > .categories__horror nav {
+  width: 666px;
+}
+.container > .categories__horror nav ul {
+  background-color: red;
+  width: 66%;
+}
+.container > .categories__horror nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+.container > .categories__sci-fi nav {
+  width: 100%;
+}
+.container > .categories__sci-fi nav ul {
+  width: 200px;
+  background-color: grey;
+  margin: 5px;
+  padding: 0px;
+}
+.container > .categories__sci-fi nav ul li {
+  margin: 5px 0;
+  padding: 5px;
+  display: inline-block;
+  width: 100%;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=nasty.css.map */

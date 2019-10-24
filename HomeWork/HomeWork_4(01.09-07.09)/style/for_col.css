@@ -1,0 +1,61 @@
+.col-1 {
+  display: block;
+  width: 100%;
+}
+
+.col-2 {
+  display: block;
+  width: 50%;
+}
+
+.col-3 {
+  display: block;
+  width: 33.3333333333%;
+}
+
+.col-4 {
+  display: block;
+  width: 25%;
+}
+
+.col-5 {
+  display: block;
+  width: 20%;
+}
+
+.col-6 {
+  display: block;
+  width: 16.6666666667%;
+}
+
+.col-7 {
+  display: block;
+  width: 14.2857142857%;
+}
+
+.col-8 {
+  display: block;
+  width: 12.5%;
+}
+
+.col-9 {
+  display: block;
+  width: 11.1111111111%;
+}
+
+.col-10 {
+  display: block;
+  width: 10%;
+}
+
+.col-11 {
+  display: block;
+  width: 9.0909090909%;
+}
+
+.col-12 {
+  display: block;
+  width: 8.3333333333%;
+}
+
+/*# sourceMappingURL=for_col.css.map */

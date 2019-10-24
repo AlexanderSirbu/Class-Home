@@ -1,0 +1,81 @@
+@import "variables.scss";
+@import "mixin.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 970px;
+}
+header {
+  @include bg_and_border(#ff8351, #b70f0a, 3px);
+  height: 60px;
+  width: $width;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.hero-block {
+  @include bg_and_border(#dfedd6, green, 3px);
+  width: $width;
+  height: 350px;
+  position: relative;
+  top: 60px;
+
+  .login-block {
+    @include bg_and_border(#ffffff, blue, 1px);
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 80%;
+    padding: 90px 40px 20px 40px;
+
+    input {
+      display: inline-block;
+      width: 150px;
+      margin: 5px;
+      border: 1px solid $color_border;
+      height: 25px;
+    }
+    .btn {
+      width: 150px;
+      border: 1px solid $color_border;
+      border-radius: 5px;
+      margin: 5px;
+      height: 25px;
+      font-weight: bold;
+    }
+  }
+}
+
+main {
+  @include bg_and_border(#c9f1fd, #0844a4, 3px);
+  width: $width;
+  height: 500px;
+  position: relative;
+  top: 60px;
+}
+article {
+  @include bg_and_border(#c99ad3, #9c29b7, 3px);
+  height: 250px;
+  width: 40%;
+  float: left;
+  margin: 10% 5% 0 5%;
+  overflow: hidden; 
+
+  .left-image {
+    @include images(right);
+  }
+  .right-image {
+    @include images(left);
+  }
+}
+footer {
+  @include bg_and_border(#ffc957, #553d0d, 3px);
+  position: fixed;
+  bottom: 0;
+  width: $width;
+  height: 60px;
+}
