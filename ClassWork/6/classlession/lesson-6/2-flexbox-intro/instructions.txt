@@ -1,0 +1,3 @@
+2-flexbox-intro Instructions
+
+Flexbox Properties.txt is a useful document to have nearby when working in Flexbox. It explains which properties apply to parents and children, along with most of their possible values.

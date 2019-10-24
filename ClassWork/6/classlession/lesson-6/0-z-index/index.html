@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        [class*='tile-'] {
+            position: absolute;
+            height: 300px;
+            width: 500px;
+        }
+
+        .tile-1 {
+            background-color: aqua;
+        }
+
+        .tile-2 {
+            background-color: blueviolet;
+            z-index: 2;
+            left: 20px;
+            top: 20px;
+        }
+
+        .tile-3 {
+            background-color: coral;
+            z-index: 3;
+            left: 40px;
+            top: 40px;
+        }
+
+        .tile-4 {
+            background-color: cadetblue;
+            z-index: 4;
+            left: 60px;
+            top: 60px;
+        }
+
+        .tile-5 {
+            background-color: yellowgreen;
+            z-index: 5;
+            left: 80px;
+            top: 80px;
+        }
+
+        .normal-flowed {
+            height: 600px;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tile-1">1</div>
+    <div class="tile-2">2</div>
+    <div class="tile-3">3</div>
+    <div class="tile-4">4</div>
+    <div class="tile-5">5</div>
+    <div class="normal-flowed">
+        I am just normal flow
+    </div>
+</body>
+
+</html>
