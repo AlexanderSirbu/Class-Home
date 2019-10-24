@@ -1,0 +1,97 @@
+body {
+    height: 1000px;
+}
+
+.container-1, .container-2 {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.container-1 div, .container-2 div {
+    border: 1px solid #000000;
+}
+
+.block-1 {
+    flex: 1;
+}
+
+.block-2 {
+    flex: 2;
+}
+
+.block-3 {
+    flex: 1;
+}
+
+.block-4 {
+    flex: 1;
+}
+
+.block-5 {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-1 h5, .container-2 h5 {
+    font-size: 19px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.container-1 p, .container-2 p {
+    padding: 0 5px 10px 10px;
+    font-size: 14px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.title h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+
+.block-2 img {
+    width: 98%;
+    padding: 0 5px 15px 5px;
+}
+
+.mini-block {
+    
+    border: 0!important;
+}
+
+.mini-block p {
+    padding: 16px 0 0 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+.mini-block-1 {
+    background: #e4f5a5;
+    flex: 1;
+}
+
+.mini-block-2 {
+    background: #a0f1ed;
+    flex: 1;
+}
+
+.mini-block-3 {
+    background: #76dbb9;
+    flex: 1;
+}
+
+.mini-block-4 {
+    background: #7fbbe4;
+    flex: 1;
+}
+
+.mini-block-5 {
+    background: #9f62e6;
+    flex: 1;
+}
