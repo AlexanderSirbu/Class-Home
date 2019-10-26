@@ -10,15 +10,30 @@
   text-transform: uppercase;
 }
 .container .btn {
-  background: #fff;
+  background: #0e0202;
   width: 100px;
-  height: 75px;
+  height: 30px;
   border: 1px solid #000;
   margin-left: 20px;
   display: block;
+  color: #fff;
+  border-radius: 10px;
 }
 .container button:first-of-type {
   margin-left: 0px;
+}
+.container .first {
+  background: #4b4be7;
+}
+.container .second {
+  background: #0d610d;
+}
+.container .third {
+  background: #e75b5b;
+}
+.container p {
+  flex-basis: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

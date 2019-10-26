@@ -1,17 +1,20 @@
 function changeValueFirstBtn(){
-    document.getElementById('h1').innerText = "This is action first-btn";
+    document.getElementById('paragraph').innerText = "This is action first-btn";
+    setTimeout(() =>alert('When u click me i change text '),0);
 };
 function changeValueSecondBtn(){
-    document.getElementById('h1').innerText = "This is action second-btn";
+    document.getElementById('paragraph').innerText = "This is action third-btn";
+    setTimeout(() =>alert('When u hover me i change text '),0);
 };
 function changeValueThirdBtn(){
-    document.getElementById('h1').innerText = "This is action third-btn";
+    document.getElementById('paragraph').innerText = "This is action second-btn";
+    setTimeout(() =>alert('When u click me right btn  i change text '),0);
 };
 
 
 
   first.addEventListener("click", changeValueFirstBtn);
-  second.addEventListener("mouseover", changeValueSecondBtn);
-  third.addEventListener("contextmenu", changeValueThirdBtn);
+  third.addEventListener("mouseover", changeValueSecondBtn);
+  second.addEventListener("contextmenu", changeValueThirdBtn);
 
  

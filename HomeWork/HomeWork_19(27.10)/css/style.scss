@@ -10,17 +10,33 @@ align-items: center;
         text-transform: uppercase;
     }
     .btn{
-        background: #fff;
+        background: rgb(14, 2, 2);
         width: 100px;
-        height: 75px;
+        height: 30px;
         border: 1px solid #000;
         margin-left: 20px;
         display: block;
+        color: #fff;
+        border-radius: 10px;
         
     }
     & button:first-of-type {
        
         margin-left: 0px;
+    }
+    .first{
+        background:rgb(75, 75, 231);
+    }
+    .second{
+        background:rgb(13, 97, 13);
+    }
+    .third{
+        background:rgb(231, 91, 91);
+
+    }
+    p{
+        flex-basis: 100%; 
+        text-align: center;   
     }
     
 }
