@@ -13,6 +13,6 @@ function changeValueThirdBtn(){
 
 
   first.addEventListener("click", changeValueFirstBtn);
-  second.addEventListener("contextmenu", changeValueSecondBtn);
-  third.addEventListener("mouseover",changeValueThirdBtn);
+  second.addEventListener("click", changeValueSecondBtn);
+  third.addEventListener("click",changeValueThirdBtn);
   
