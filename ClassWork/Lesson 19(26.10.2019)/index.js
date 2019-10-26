@@ -3,8 +3,7 @@ function alertUsername(value){
     alert(value);
 };
 
-function alertPassword(event){
-    
+function alertPassword(event){    
     var pass = event.target.value;
     var passLength = pass.length;
     if(passLength){
@@ -21,11 +20,10 @@ var elemUsername = document.getElementById("username");
 var elemPassword = document.getElementById("password");
 
 
-elemUsername.addEventListener('blur',(event) =>{
-  
+elemUsername.addEventListener('blur',(event) =>{  
     alertUsername(event.target.value)
-
 })
+
 elemPassword.addEventListener('blur',(event)=>{
 alertPassword(event);
 })
