@@ -1,4 +1,4 @@
-function changeValueFirstBtn(){
+function changeValueFirstBtn(event){
     document.getElementById('paragraph').innerText = "You clicked First button";
     
 };
@@ -12,7 +12,7 @@ function changeValueThirdBtn(){
 
 
 
-  first.addEventListener("click", changeValueFirstBtn);
+  first.addEventListener("click", changeValueFirstBtn );
   second.addEventListener("click", changeValueSecondBtn);
   third.addEventListener("click",changeValueThirdBtn);
   
