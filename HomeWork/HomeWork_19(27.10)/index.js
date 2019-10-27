@@ -1,4 +1,4 @@
-function changeValueFirstBtn(event){
+function changeValueFirstBtn(){
     document.getElementById('paragraph').innerText = "You clicked First button";
     
 };
