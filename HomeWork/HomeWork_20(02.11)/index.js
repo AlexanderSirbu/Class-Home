@@ -1,26 +1,37 @@
-const btnBlock = document.getElementById('btn-main');
-const paragraph = document.getElementById('paragraph');
-const elems = document.querySelectorAll('*');
 
-
+const html = document.documentElement;
+//* advanced
+const body = document.body;
+const div = document.querySelector('div');
+const btn = document.querySelector('button')
+//*
 function test(event) {
 
-    if (event.target.classList.contains('first')) {
-        paragraph.innerText = "You clicked First button";
-        console.log("capturing", this.tagName);
+    if (event.target.classList.contains('first-btn')) {
+        paragraph.textContent = "You clicked First button";
+        console.log("capturing", this.tagName);//*  event.target.tagName
 
-    } else if (event.target.classList.contains('second')) {
-        paragraph.innerText = "You clicked Second button";
-        console.log("capturing", this.tagName);
+    } else if (event.target.classList.contains('second-btn')) {
+        paragraph.textContent = "You clicked Second button";
+        console.log("capturing", this.tagName);//*  event.target.tagName
 
-    } else if (event.target.classList.contains('third')) {
-        paragraph.innerText = "You clicked Third button";
-        console.log("capturing", this.tagName);
+    } else if (event.target.classList.contains('third-btn')) {
+        paragraph.textContent = "You clicked Third button";
+        console.log("capturing", this.tagName);//*  event.target.tagName
     }
 
 };
 
-for (var i = 0; i < elems.length; i++) {
-    elems[i].addEventListener("click", test, true);
-}
-btnBlock.addEventListener("click", test, true)
+html.addEventListener("click",test, true);
+//* advanced
+//capture
+body.addEventListener("click",test, true);
+div.addEventListener("click",test, true);
+btn.addEventListener("click",test, true);
+//bubble
+html.addEventListener("click",test);
+body.addEventListener("click",test);
+div.addEventListener("click",test);
+//*
+
+
