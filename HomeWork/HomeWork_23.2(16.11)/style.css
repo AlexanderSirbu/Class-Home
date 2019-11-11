@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fff;
+}
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+h1{
+  margin-bottom: 20px;
+}
+p{
+  margin-bottom: 20px;
+}
+button{
+  color: #fff;
+  height: 30px;
+  width: 75px;
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+  background-color: #d1a4a4;
+  border-radius: 50px;
+ margin-right: 20px;
+}
+.container-btn button:last-child{
+  margin-right: 0px;
+}
