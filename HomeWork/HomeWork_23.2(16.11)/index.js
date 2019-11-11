@@ -9,7 +9,7 @@ function verificateLocalStorage() {
   if (localStorage.getItem('name') != null) {
     text.textContent = 'Hello ' + localStorage.getItem('name');
   } else {
-   text.innerText = "Hello guest,please register";
+    text.innerText = "Hello guest,please register";
   }
 
 };
@@ -19,7 +19,11 @@ function main(event) {
 
   if (event.target.classList.contains('register')) {
     let name = prompt('What is ur name?');
-    localStorage.setItem('name', name);
+    if (name.length >= 2) {
+      localStorage.setItem('name', name);
+    } else {
+      alert('name must be longer');
+    };
     document.querySelector('p').textContent = 'Hello ' + localStorage.getItem('name');
   } else if (event.target.classList.contains('reset')) {
     localStorage.removeItem('name');
@@ -29,4 +33,3 @@ function main(event) {
 };
 
 mainName.addEventListener("click", main);
-
