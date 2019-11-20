@@ -1,0 +1,87 @@
+html{
+  font-family: 'Permanent Marker', cursive;}
+*{
+ 
+  font-size: 16px;
+  color:#fff
+  
+}
+body{
+  background-image: url("./img/bg.jpg") ;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.btn{
+  width: 70px;
+  margin-right: 10px;
+}
+.btn:last-child{
+  margin-right: 0px;
+}
+#pod-list h2{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.container-btn{
+  margin-top: 20px;
+}
+#pod-list img{
+  height:400px;
+}
+
+
+
+#pod-list p{
+  margin: 20px 0 ;
+  width: 700px;
+
+}
+
+
+header{
+  position: relative;
+  
+}
+.logo {
+width: 90px;
+padding: 5px 0;
+}
+header::after {
+  content: " ";
+  border-bottom:1px solid white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.4;
+}
+
+
+.oopsy{
+  color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+.pod-list span{
+  color:yellow;
+  font-size: 18px;
+}
+
+
+.lazy{
+  opacity: 0;
+  transition: all 2s; 
+}
+.active{
+  opacity: 1;
+  
+}
