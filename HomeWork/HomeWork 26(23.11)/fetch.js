@@ -31,10 +31,10 @@ function getPictureOfDay(URL) {
         date
       } = result;
       nasaImage.src = url
-      nasaTitle.innerHTML = `${title}`;
-      nasaExplanation.innerHTML = `Explanation : ${explanation}`;
-      nasaCopyright.innerHTML = `Copyright : ${copyright}`;
-      nasaDate.innerHTML = `Date : ${date}`;
+      nasaTitle.innerHTML = `<span>${title}</span>`;
+      nasaExplanation.innerHTML = `<span>Explanation</span> : ${explanation}`;
+      nasaCopyright.innerHTML = `<span>Copyright </span> : ${copyright}`;
+      nasaDate.innerHTML = `<span>Date</span> : ${date}`;
 
       if (nasaCopyright.inneHTML == undefined) {
         console.log('Soory, but information not delivered to Earth yet🚀')
@@ -106,26 +106,41 @@ function renderPODComponent(data) {
       const container = document.getElementById('pod-list');
       container.classList.add('d-flex','flex-column','justify-content-center','align-items-center','col-12','pod-list');
       const titleComponent = document.createElement('h2');
-      titleComponent.innerText = title;
+      titleComponent.innerHTML = `<span>${title}</span>`;
       const imageComponent = document.createElement('img');
       imageComponent.src = url;      
       imageComponent.classList.add('lazy');
       const descriptionComponent = document.createElement('p');
-      descriptionComponent.innerText = `Explanation : ${explanation}`;
+      descriptionComponent.innerHTML = `<span>Explanation</span> : ${explanation}`;
       const copyrightComponent = document.createElement('p');
-      copyrightComponent.innerText = `Copyright : ${copyright}`;
+      copyrightComponent.innerHTML = `<span>Copyright</span> : ${copyright}`;
       const dateComponent = document.createElement('p');
-      dateComponent.innerHTML = `Date : ${date}`;
+      dateComponent.innerHTML = `<span>Date</span> : ${date}`;
       
-      container.append(...[titleComponent, imageComponent, descriptionComponent, copyrightComponent])
+      container.append(...[titleComponent, imageComponent, descriptionComponent, copyrightComponent, dateComponent])
 
-      if (titleComponent.inneHTML == undefined || descriptionComponent.inneHTML == undefined || copyrightComponent.inneHTML == undefined ) {
+      if (titleComponent == undefined ){
         console.log('Soory, but information not delivered to Earth yet🚀')
-        nasaCopyright.classList.add('oopsy')
-        nasaCopyright.innerText = "Opsy, this information not delivered to Earth yet🚀 ";
+        titleComponent.classList.add('oopsy')
+        titleComponent.innerHTML = "Opsy, this information not delivered to Earth yet🚀 ";
+
+      }else if(descriptionComponent == undefined){
+        console.log('Soory, but information not delivered to Earth yet🚀')
+        descriptionComponent.classList.add('oopsy')
+        descriptionComponent.innerHTML = "Opsy, this information not delivered to Earth yet🚀 ";
+
+      }else if(copyrightComponent == undefined){
+        console.log('Soory, but information not delivered to Earth yet🚀')
+        copyrightComponent.classList.add('oopsy')
+        copyrightComponent.innerHTML = "Opsy, this information not delivered to Earth yet🚀 ";
+
+      }else if(dateComponent == undefined){
+        console.log('Soory, but information not delivered to Earth yet🚀')
+        dateComponent.classList.add('oopsy')
+        dateComponent.innerHTML = "Opsy, this information not delivered to Earth yet🚀 ";
 
       }
-
+    
     })
 }
 
