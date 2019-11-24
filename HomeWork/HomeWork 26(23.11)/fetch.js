@@ -23,6 +23,7 @@ function getPictureOfDay(URL) {
       return response.json()
     })
     .then(result => {
+      console.log(result)
       const {
         url,
         title,
