@@ -1,0 +1,524 @@
+* {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+@media screen and (min-width: 820px) {
+  .container .hero-block {
+    width: 100%;
+    height: 100%;
+    font-family: "Libre Franklin", sans-serif;
+    background: no-repeat, rgba(198, 108, 73, 0.4);
+    background-image: url(../img/background-for-mobile.svg);
+    background-size: cover;
+    color: #ffffff;
+  }
+  .container .hero-block .header .header__navigation {
+    display: flex;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title {
+    margin: 93px 464px 0 165px;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title span a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title .header__navigation-images {
+    display: none;
+  }
+  .container .hero-block .header .header__navigation .menu {
+    display: flex;
+    flex-basis: 1;
+    margin-top: 93px;
+  }
+  .container .hero-block .header .header__navigation .menu li {
+    margin-right: 60px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .container .hero-block .header .header__navigation .menu li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .container .hero-block .hero-block__information {
+    display: flex;
+    flex-direction: column;
+    margin-top: 93px;
+    margin-left: 165px;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__main-title {
+    margin: 145px 0 26px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 78px;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__second-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__latest-works {
+    margin: 106px 0 240px;
+    text-decoration-line: underline;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__latest-works a {
+    color: #fff;
+  }
+  .container .about {
+    display: flex;
+    flex-direction: column;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  .container .about .about__title {
+    margin-top: 93px;
+    margin-left: 165px;
+    margin-bottom: 76px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .container .about .about__information {
+    margin: 0 167px 115px 165px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .container .skills {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Libre Franklin", sans-serif;
+    background: #FFFAF2;
+  }
+  .container .skills .profile_title {
+    margin-bottom: 86px;
+    margin-top: 93px;
+    margin-left: 165px;
+    flex-basis: 100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .container .skills .profile-images {
+    margin: 0 125px 145px 165px;
+  }
+  .container .skills .profile-images img {
+    width: 350px;
+  }
+  .container .skills .profile-details {
+    display: flex;
+  }
+  .container .skills .profile-details .profile-details-block-left-side {
+    padding-right: 78px;
+    line-height: 25px;
+    font-style: normal;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .container .skills .profile-details .profile-details-block-right-side {
+    line-height: 25px;
+    font-style: normal;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-1,
+.container .skills .profile-details .profile-details-block-left-side .col-1 {
+    margin-bottom: 65px;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-2,
+.container .skills .profile-details .profile-details-block-right-side .col-3,
+.container .skills .profile-details .profile-details-block-right-side .col-4,
+.container .skills .profile-details .profile-details-block-right-side .col-5,
+.container .skills .profile-details .profile-details-block-right-side .col-6,
+.container .skills .profile-details .profile-details-block-left-side .col-2,
+.container .skills .profile-details .profile-details-block-left-side .col-3,
+.container .skills .profile-details .profile-details-block-left-side .col-4,
+.container .skills .profile-details .profile-details-block-left-side .col-5,
+.container .skills .profile-details .profile-details-block-left-side .col-6 {
+    margin-bottom: 20px;
+  }
+  .container .portfolio {
+    font-family: "Libre Franklin", sans-serif;
+    display: flex;
+  }
+  .container .portfolio .portfolio__title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 165px;
+  }
+  .container .portfolio .portfolio__title .portfolio__title-main {
+    margin: 93px 0 86px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .container .portfolio .portfolio__title .portfolio__title-second {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 48px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .container .portfolio .portfolio__title p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .container .portfolio .portfolio__title .portfolio__arrows {
+    margin-top: 235px;
+  }
+  .container .portfolio .portfolio__title .portfolio__arrows .arrow {
+    margin-right: 8px;
+  }
+  .container .portfolio .portfolio__images {
+    display: flex;
+    margin: 274px 0 145px 165px;
+  }
+  .container .portfolio .portfolio__images .side-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .portfolio .portfolio__images .side-left .portfolio__images-1 {
+    margin: 0 30px 26px 0;
+  }
+  .container .portfolio .portfolio__images .side-left img {
+    width: 350px;
+  }
+  .container .portfolio .portfolio__images .side-right {
+    display: flex;
+    flex-direction: column;
+    margin-right: 165px;
+  }
+  .container .portfolio .portfolio__images .side-right .portfolio__image-3 {
+    margin-bottom: 24px;
+  }
+  .container .portfolio .portfolio__images .side-right img {
+    width: 255px;
+  }
+  .container .Get__in__touch {
+    font-family: "Libre Franklin", sans-serif;
+    background: #FFFAF2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .Get__in__touch .Get__in__touch-title {
+    margin-bottom: 51px;
+    margin-top: 93px;
+    margin-left: 165px;
+    flex-basis: 100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .container .Get__in__touch .Get__in__touch-details {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 189px 165px;
+  }
+  .container .Get__in__touch .Get__in__touch-details .left span {
+    margin-bottom: 14px;
+  }
+  .container .Get__in__touch .Get__in__touch-details .side {
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+  }
+  .container .Get__in__touch .Get__in__touch-details .side span {
+    margin-bottom: 14px;
+  }
+  .container .Get__in__touch .Get__in__touch-details a {
+    text-decoration: none;
+    color: #333333;
+  }
+  .container .Get__in__touch .Get__in__touch-footer {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .container .Get__in__touch .Get__in__touch-footer .mail {
+    margin-bottom: 14px;
+  }
+  .container .Get__in__touch .Get__in__touch-footer a {
+    margin: 239px 0 0 363px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 815px) {
+  .container .hero-block {
+    width: 100%;
+    height: 100%;
+    font-family: "Libre Franklin", sans-serif;
+    background: no-repeat, rgba(198, 108, 73, 0.4);
+    background-image: url(../img/background-for-mobile.svg);
+    background-size: cover;
+    color: #ffffff;
+  }
+  .container .hero-block .header .header__navigation {
+    margin-left: 34px;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title {
+    display: flex;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title span {
+    margin-top: 43px;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title .header__navigation-titles {
+    flex-basis: 100%;
+    margin-right: 9%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .container .hero-block .header .header__navigation .header__navigation-title .header__navigation-titles a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .container .hero-block .header .header__navigation .menu {
+    display: none;
+  }
+  .container .hero-block .hero-block__information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__main-title {
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__second-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__latest-works {
+    margin: 41px 0 50px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: underline;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__latest-works a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .container .hero-block .hero-block__information .hero-block__information__latest-works a:hover {
+    font-size: 14px;
+    color: #fff3e6;
+  }
+  .container .about {
+    display: flex;
+    flex-direction: column;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  .container .about .about__title {
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .container .about .about__information {
+    margin: 19px 29px 26px 34px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+  }
+  .container .skills {
+    display: flex;
+    flex-direction: column;
+    font-family: "Libre Franklin", sans-serif;
+    background: #FFFAF2;
+  }
+  .container .skills .profile_title {
+    margin: 25px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .container .skills .profile-details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .skills .profile-details .profile-images {
+    text-align: center;
+    margin-bottom: 26px;
+    flex-basis: 100%;
+  }
+  .container .skills .profile-details .profile-details-block-left-side {
+    margin-left: 34px;
+    line-height: 25px;
+    font-style: normal;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .container .skills .profile-details .profile-details-block-right-side {
+    margin-bottom: 25px;
+    line-height: 25px;
+    font-style: normal;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-1,
+.container .skills .profile-details .profile-details-block-left-side .col-1 {
+    margin: 26px 0 31px;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-3,
+.container .skills .profile-details .profile-details-block-left-side .col-3 {
+    margin: 9px 0 18px;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-5,
+.container .skills .profile-details .profile-details-block-left-side .col-5 {
+    margin: 10px 0 18px;
+  }
+  .container .skills .profile-details .profile-details-block-right-side .col-7,
+.container .skills .profile-details .profile-details-block-left-side .col-7 {
+    margin-top: 8px;
+  }
+  .container .portfolio {
+    display: flex;
+    flex-direction: column;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  .container .portfolio .portfolio__title {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .portfolio .portfolio__title .portfolio__title-main {
+    margin: 25px 0 19px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .container .portfolio .portfolio__title .portfolio__title-second {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+  }
+  .container .portfolio .portfolio__title p {
+    margin: 0px 34px 18px 33px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+  .container .portfolio .portfolio__title .portfolio__arrows {
+    display: none;
+  }
+  .container .portfolio .portfolio__images {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .container .portfolio .portfolio__images .side-left {
+    margin-left: 34px;
+  }
+  .container .portfolio .portfolio__images .side-left img {
+    margin-bottom: 12px;
+  }
+  .container .portfolio .portfolio__images .side-right {
+    margin-right: 33px;
+  }
+  .container .portfolio .portfolio__images .side-right img {
+    margin-bottom: 11px;
+  }
+  .container .Get__in__touch {
+    display: flex;
+    flex-direction: column;
+    font-family: "Libre Franklin", sans-serif;
+    background: #FFFAF2;
+  }
+  .container .Get__in__touch .Get__in__touch-title {
+    margin: 26px 0 22px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .container .Get__in__touch .Get__in__touch-details {
+    display: flex;
+    margin: 0 0 30px 42px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .container .Get__in__touch .Get__in__touch-details .side {
+    flex-basis: 45%;
+  }
+  .container .Get__in__touch .Get__in__touch-details span {
+    display: block;
+    margin-top: 19px;
+  }
+  .container .Get__in__touch .Get__in__touch-details span a {
+    text-decoration: none;
+    color: #333333;
+  }
+  .container .Get__in__touch .Get__in__touch-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 42px;
+  }
+  .container .Get__in__touch .Get__in__touch-footer .mail {
+    flex-basis: 100%;
+  }
+  .container .Get__in__touch .Get__in__touch-footer a {
+    margin: 0 32px 58px 108px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

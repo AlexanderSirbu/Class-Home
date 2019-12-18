@@ -1,0 +1,11 @@
+
+value = 'a' > 'A';
+
+console.log(value);
+
+value = 'A'.charCodeAt();
+
+console.log(value);
+
+value = 'a'.charCodeAt();
+console.log(value);

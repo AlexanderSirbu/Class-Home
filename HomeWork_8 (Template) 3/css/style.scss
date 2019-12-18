@@ -1,0 +1,431 @@
+@import 'mixin.scss';
+@import 'variables.scss';
+* {
+    font-family: $font_family;
+}
+
+.container {
+    width: 100%;
+    @media screen and (min-width: 820px) {
+        //start hero-block
+        .hero-block {
+            width: 100%;
+            height: 100%;
+            font-family: $font_family;
+            background: no-repeat, rgba(198, 108, 73, 0.4);
+            background-image: url(../img/background-for-mobile.svg);
+            background-size: cover;
+            color: #ffffff;
+            //start header
+            .header {
+                .header__navigation {
+                    display: flex;
+                    .header__navigation-title {
+                        margin: 93px 464px 0 165px;
+                        span {
+                            @include font_style_weight_size_height(normal, bold, 24px, 29px);
+                            a {
+                                text-decoration: none;
+                                color: #ffffff;
+                            }
+                        }
+                        .header__navigation-images {
+                            display: none;
+                        }
+                    }
+                    .menu {
+                        display: flex;
+                        flex-basis: 1;
+                        margin-top: 93px;
+                        li {
+                            margin-right: 60px;
+                            @include font_style_weight_size_height(normal, bold, 18px, 22px);
+                            a {
+                                @include a();
+                            }
+                        }
+                    }
+                }
+            } //close header
+            // start hero-block__information
+            .hero-block__information {
+                display: flex;
+                flex-direction: column;
+                @include margin_top_and_left();
+                .hero-block__information__main-title {
+                    margin: 145px 0 26px;
+                    @include font_style_weight_size_height(normal, normal, 64px, 78px);
+                }
+                .hero-block__information__second-title {
+                    @include font_style_weight_size_height(normal, normal, 24px, 29px);
+                }
+                .hero-block__information__latest-works {
+                    margin: 106px 0 240px;
+                    text-decoration-line: underline;
+                    @include font_style_weight_size_height(normal, normal, 18px, 22px);
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+            // close hero-block__information
+        } //close hero-block
+        //start about
+        .about {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-family;
+            .about__title {
+                @include margin_top_and_left();
+                margin-bottom: 76px;
+                @include font_style_weight_size_height(normal, bold, 24px, 29px);
+            }
+            .about__information {
+                margin: 0 167px 115px 165px;
+                @include font_style_weight_size_height_align(normal, normal, 18px, 30px, justify);
+            }
+        } //close about
+        //start skills
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            @include font_family_and_bg();
+            .profile_title {
+                margin-bottom: 86px;
+                @include margin_top_and_left();
+                flex-basis: 100%;
+                @include font_style_weight_size_height(normal, bold, 24px, 29px);
+            }
+            .profile-images {
+                margin: 0 125px 145px 165px;
+                img {
+                    width: 350px;
+                }
+            }
+            .profile-details {
+                display: flex;
+                .profile-details-block-left-side {
+                    padding-right: 78px;
+                    @include fonts_display_direction_font-weight(600);
+                }
+                .profile-details-block-right-side {
+                    @include fonts_display_direction_font-weight(normal);
+                }
+                .profile-details-block-right-side,
+                .profile-details-block-left-side {
+                    .col-1 {
+                        margin-bottom: 65px;
+                    }
+                    .col-2,
+                    .col-3,
+                    .col-4,
+                    .col-5,
+                    .col-6 {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        } //close skills
+        //start portfolio
+        .portfolio {
+            font-family: $font_family;
+            display: flex;
+            .portfolio__title {
+                display: flex;
+                flex-direction: column;
+                margin-left: 165px;
+                .portfolio__title-main {
+                    margin: 93px 0 86px;
+                    @include font_style_weight_size_height(normal, bold, 24px, 29px);
+                }
+                .portfolio__title-second {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 48px;
+                    @include font_style_weight_size_height(normal, 600, 18px, 25px);
+                }
+                p {
+                    @include font_style_weight_size_height_align(normal, normal, 18px, 30px, justify);
+                }
+                .portfolio__arrows {
+                    margin-top: 235px;
+                    .arrow {
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .portfolio__images {
+                display: flex;
+                margin: 274px 0 145px 165px;
+                .side-left {
+                    display: flex;
+                    flex-direction: column;
+                    .portfolio__images-1 {
+                        margin: 0 30px 26px 0;
+                    }
+                    img {
+                        width: 350px;
+                    }
+                }
+                .side-right {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 165px;
+                    .portfolio__image-3 {
+                        margin-bottom: 24px;
+                    }
+                    img {
+                        width: 255px;
+                    }
+                }
+            }
+        }
+        //end portfolio
+        //start Get_in_touch
+        .Get__in__touch {
+            @include font_family_and_bg();
+            display: flex;
+            flex-wrap: wrap;
+            .Get__in__touch-title {
+                margin-bottom: 51px;
+                @include margin_top_and_left();
+                flex-basis: 100%;
+                @include font_style_weight_size_height(normal, bold, 24px, 29px);
+            }
+            .Get__in__touch-details {
+                display: flex;
+                flex-direction: row;
+                margin: 0 0 189px 165px;
+                .left {
+                    span {
+                        margin-bottom: 14px;
+                    }
+                }
+                .side {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 300px;
+                    span {
+                        margin-bottom: 14px;
+                    }
+                }
+                a {
+                    @include a_black();
+                }
+            }
+            .Get__in__touch-footer {
+                display: flex;
+                flex-flow: column wrap;
+                .mail {
+                    margin-bottom: 14px;
+                }
+                a {
+                    margin: 239px 0 0 363px;
+                }
+            }
+        }
+    } //end Get_in_touch
+    @media only screen and (min-width: 375px) and (max-width: 815px) {
+        // start hero-block 
+        .hero-block {
+            width: 100%;
+            height: 100%;
+            font-family: $font_family;
+            background: no-repeat, rgba(198, 108, 73, 0.4);
+            background-image: url(../img/background-for-mobile.svg);
+            background-size: cover;
+            color: #ffffff;
+            //start header
+            .header {
+                .header__navigation {
+                    margin-left: 34px;
+                    .header__navigation-title {
+                        display: flex;
+                        span {
+                            margin-top: 43px;
+                        }
+                        .header__navigation-images {}
+                        .header__navigation-titles {
+                            flex-basis: 100%;
+                            margin-right: 9%;
+                            @include font_style_weight_size_height_align(normal, bold, 24px, 29px, center);
+                            a {
+                                @include a();
+                            }
+                        }
+                    }
+                    .menu {
+                        display: none;
+                    }
+                }
+            } //end header
+            // start hero-block__information
+            .hero-block__information {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                .hero-block__information__main-title {
+                    margin-top: 50px;
+                    @include font_style_weight_size_height(normal, normal, 20px, 24px);
+                }
+                .hero-block__information__second-title {
+                    @include font_style_weight_size_height(normal, normal, 13px, 16px);
+                }
+                .hero-block__information__latest-works {
+                    margin: 41px 0 50px 0;
+                    @include font_style_weight_size_height(normal, normal, 13px, 16px);
+                    text-decoration-line: underline;
+                    a {
+                        @include a();
+                    }
+                    a:hover {
+                        font-size: 14px;
+                        color: #fff3e6;
+                    }
+                }
+            } // close hero-block__information
+        }
+        // //start about
+        .about {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-family;
+            .about__title {
+                margin-top: 25px;
+                @include font_style_weight_size_height_align(normal, 600, 24px, 29px, center);
+            }
+            .about__information {
+                margin: 19px 29px 26px 34px;
+                @include font_style_weight_size_height_align(normal, normal, 12px, 15px, justify);
+            }
+        } //close about
+        // //start skills
+        .skills {
+            display: flex;
+            flex-direction: column;
+            @include font_family_and_bg;
+            .profile_title {
+                margin: 25px 0;
+                @include font_style_weight_size_height_align(normal, 600, 24px, 29px, center);
+            }
+            .profile-details {
+                display: flex;
+                flex-wrap: wrap;
+                .profile-images {
+                    text-align: center;
+                    margin-bottom: 26px;
+                    flex-basis: 100%;
+                }
+                .profile-details-block-left-side {
+                    margin-left: 34px;
+                    @include fonts_display_direction_font_weight(600);
+                }
+                .profile-details-block-right-side {
+                    margin-bottom: 25px;
+                    @include fonts_display_direction_font_weight(normal);
+                }
+                .profile-details-block-right-side,
+                .profile-details-block-left-side {
+                    .col-1 {
+                        margin: 26px 0 31px;
+                    }
+                    .col-3 {
+                        margin: 9px 0 18px;
+                        ;
+                    }
+                    .col-5 {
+                        margin: 10px 0 18px;
+                        ;
+                    }
+                    .col-7 {
+                        margin-top: 8px;
+                    }
+                }
+            }
+        } //close skills
+        //start portfolio
+        .portfolio {
+            display: flex;
+            flex-direction: column;
+            font-family: $font_family;
+            .portfolio__title {
+                display: flex;
+                flex-direction: column;
+                .portfolio__title-main {
+                    margin: 25px 0 19px;
+                    ;
+                    @include font_style_weight_size_height_align(normal, 600, 24px, 29px, center);
+                }
+                .portfolio__title-second {
+                    margin-bottom: 15px;
+                    @include font_style_weight_size_height_align(normal, 500, 14px, 15px, center);
+                }
+                p {
+                    margin: 0px 34px 18px 33px;
+                    @include font_style_weight_size_height_align(normal, normal, 12px, 15px, center);
+                }
+                .portfolio__arrows {
+                    display: none;
+                }
+            }
+            .portfolio__images {
+                display: flex;
+                margin-bottom: 25px;
+                .side-left {
+                    margin-left: 34px;
+                    img {
+                        margin-bottom: 12px;
+                    }
+                }
+                .side-right {
+                    margin-right: 33px;
+                    img {
+                        margin-bottom: 11px;
+                    }
+                }
+            }
+        }
+        //end portfolio
+        //start Get_in_touch
+        .Get__in__touch {
+            display: flex;
+            flex-direction: column;
+            @include font_family_and_bg();
+            .Get__in__touch-title {
+                margin: 26px 0 22px;
+                @include font_style_weight_size_height_align(normal, 600, 24px, 29px, center);
+            }
+            .Get__in__touch-details {
+                display: flex;
+                margin: 0 0 30px 42px;
+                @include font_style_weight_size_height(normal, normal, 14px, 17px);
+                .left {}
+                .side {
+                    flex-basis: 45%;
+                }
+                span {
+                    display: block;
+                    margin-top: 19px;
+                    a {
+                        @include a_black();
+                    }
+                }
+            }
+            .Get__in__touch-footer {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 42px;
+                .mail {
+                    flex-basis: 100%;
+                }
+                a {
+                    margin: 0 32px 58px 108px;
+                }
+            }
+            //end Get_in_touch
+        }
+    }
+}
+
